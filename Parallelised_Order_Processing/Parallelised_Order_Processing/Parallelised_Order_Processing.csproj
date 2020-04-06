@@ -1,0 +1,1149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37944968-D66E-4CD6-A104-196304AA4B2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Parallelised_Order_Processing</RootNamespace>
+    <AssemblyName>Parallelised_Order_Processing</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\abc-verification-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\add-interface-circular-symbol-with-plus-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\add-rectangular-shape-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\add-square-button-with-three-vertical-rectangles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\add-window-grid-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\adobe-reader-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\adobe-reader-logotype-with-two-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\atom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\back-left-arrow-and-man-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\back-search-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\bars-graphic-business-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\binoculars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\binoculars-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\binoculars-with-left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\binoculars-with-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\black-open-folder-symbol-of-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\black-paper-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\black-paper-with-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\blocked-shopping-cart-e-commerce-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\block-file-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\bold-button-of-letter-b-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-back-button-with-left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-configuration-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-download-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-of-music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-protection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-search-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-symbol-with-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-verification-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-with-circular-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-with-cross-delete-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-with-keyhole-for-security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\book-with-upload-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\borders-size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\bricks-pattern-square-button-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\browser-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\business-graphic-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\calculator-interface-symbol-of-four-buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\cancel-shopping-cart-e-commerce-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\cascade-visualization-option-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\cf-in-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circle-with-diagonal-line-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circle-with-lines-and-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circular-arrow-around-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circular-arrow-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circular-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circular-ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\circular-shape-divided-in-three-areas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard-and-notebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard-with-paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard-with-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clipboard-with-text-paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\clock-in-a-square-with-one-rounded-corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\close-cross-symbol-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\color-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\computer-monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\configuration-cogwheel-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\contacts-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\copy-two-paper-sheets-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\cross-delete-or-close-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\csv-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\daily-calendar-on-day-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\database-configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\database-security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\database-verification-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\delete-database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\delete-file-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\delete-file-symbol-of-paper-sheet-with-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\delete-user-male-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\design-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\dice-face-with-one-dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\dice-with-five-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\diskette-save-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\doc-file-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\domino-piece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\domino-piece-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\domino-piece-of-square-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\domino-piece-with-six-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\domino-tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\dots-beginning-text-lines-interface-button-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\double-up-and-down-arrow-between-two-horizontal-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\double-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\down-arrow-file-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\down-arrow-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\down-arrow-in-a-circle-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-business-statistics-symbol-of-a-graphic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-down-arrow-circular-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-down-arrow-symbol-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-file-symbol-with-an-asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-grid-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-picture-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\download-text-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\eight-rectangles-divided-in-two-columns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\email-frontal-envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\exclamation-sign-in-oval-speech-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\eye-in-a-magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\feet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\file-configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\file-dark-symbol-with-a-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\file-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\file-with-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\folder-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\folder-with-papers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\folder-with-papers-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\fon-file-type-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\forbidden-reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\four-centered-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\four-horizontal-lines-with-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\four-horizontal-lines-with-one-different.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\four-squares-with-frame-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\from-grid-to-list-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\fx-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\games-control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\geometrical-shapes-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\geometric-shapes-group-with-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\hammer-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\header-and-feet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\heart-shape-in-a-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\height-rectangular-shape-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\home-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\horizontal-lines-and-cross-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\horizontal-lines-symbol-with-one-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\horizontal-or-vertical-paper-position-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\horizontal-rectangle-divided-in-two-with-arrows-to-sides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\horizontal-rectangles-symbol-of-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\increase-size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\increase-size-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\indent-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\information-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\interface-tool-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\interface-verification-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\international-certification-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\intersection-area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\keyboard-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key-on-rounded-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key-or-password-plus-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\key-with-a-star-security-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\landscape-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\learning-abecedary-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\left-alignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\left-alignment-five-rectangles-outline-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\left-arrow-circular-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\letter-a-square-button-symbol-with-one-rounded-corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\letter-p-and-pie-graphic-in-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\letter-sign-in-a-square-with-one-rounded-corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\letter-size-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\letter-v-button-of-square-shape-with-one-rounded-corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\lightbulb-black-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\link-symbol-in-a-square-with-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\list-with-numbers-interface-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\lock-database-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\locked-book-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\locked-padlock-security-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\locked-protected-file-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\lock-user-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\logo-of-letter-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\magic-wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\magnifier-search-symbol-with-right-arrow-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\man-and-right-arrow-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\manuscript-rolled-paper-with-two-rolls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\man-with-ascending-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\man-with-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\man-with-prohibition-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\menu-symbol-of-four-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\microphone-in-diagonal-position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\minus-sign-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\musical-note-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\nine-dots-in-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\notebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\notebook-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\notes-tools-symbol-of-a-clipboard-and-notebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\number-one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\numbers-sequence-verification-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\numeral-rectangular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\numeral-sign-in-black-vertical-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\omega-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\omega-sign-in-a-square-with-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\open-text-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\oriental-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\otf-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\oval-speech-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\oval-speech-bubble-with-smiling-signs-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paint-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paperclip-attach-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paper-sheet-with-a-pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paper-sheet-with-left-arrow-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\papers-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\paragraph-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\pdf-file-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\pencil-diagonal-outline-symbol-on-a-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\pencil-writing-on-a-paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\person-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\personal-configuration-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\personal-information-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\personal-security-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\phones-contacts-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\photo-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\picture-of-stripes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\playing-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\playing-card-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\playing-card-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\plugins-in-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\plugs-in-square-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\plus-button-of-a-rectangle-and-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\plus-zoom-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\portrait-image-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\ppt-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\printer-machine-with-paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\print-interface-symbol-of-a-printer-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\question-file-symbol-of-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\question-mark-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\reading-time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-grid-design-with-header-and-left-column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-in-a-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangles-symbol-with-intersection-area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangle-with-broken-line-in-the-middle-and-two-arrows-pointing-to-sides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangle-with-verification-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangular-black-paper-with-text-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangular-dark-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangular-paper-with-rectangles-design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangular-space-symbol-for-date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rectangular-vertical-shape-with-rectangles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\reduce-zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\right-arrow-circular-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\right-arrow-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\right-arrow-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\right-menu-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\road-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rotating-circular-arrow-symbol-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\royal-crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\rtf-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sand-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\scissors-pointing-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\scissors-pointing-down-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\screwdriver-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\search-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\searching-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\searching-file-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\search-magnifier-symbol-of-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\search-symbol-of-a-magnifier-with-a-letter-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\search-tool-in-a-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\select-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\semaphore-of-three-lights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shape-size-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shoppin-cart-back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-information-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-lock-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-preferences-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-right-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-with-down-arrow-e-commerce-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-with-time-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\shopping-cart-with-up-arrow-e-commerce-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign-of-a-line-and-a-rotated-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sign-with-symmetry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-domino-piece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-domino-piece-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-rectangles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-rectangles-and-a-pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-rectangles-design-structure-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\six-rectangles-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\sort-ascending-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\square-plus-add-button-with-three-squares-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\squares-design-tool-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\squares-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\square-symbol-with-a-cross-inside-and-four-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\square-with-diagonal-line-and-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\star-outline-favorite-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\strikethrough-text-interface-option-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\superscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-file-dark-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-file-verification-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-paper-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-paper-with-two-rectangles-outlines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\text-tool-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-databases-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-geometrical-shapes-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-horizontal-lines-with-plus-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-rectangles-symbol-of-interface-with-one-bigger-and-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-squares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-squares-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\three-vertical-lines-with-a-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\time-control-interface-symbol-of-an-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\trash-container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\triangle-of-stripes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\ttp-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-arrows-in-a-rectangle-divided-by-broken-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-arrows-in-rectangles-pointing-to-the-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-arrows-pointing-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-black-paper-sheets-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-circular-arrows-symbol-in-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-curved-back-arrows-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-databases.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-equal-rectangles-with-arrows-pointing-the-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-grids-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-squares-symbol-with-double-arrow-pointing-to-both-sides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-vertical-bars-with-two-arrows-at-sides-pointing-to-the-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-vertical-rectangles-with-arrows-pointing-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\two-windows-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\txt-text-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\typography-interface-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\underlined-text-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\underlined-text-option-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\unlock-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\up-and-down-arrows-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\upload-circular-symbol-of-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\upload-file-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\uppercase-or-lowercase-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\uppercase-or-lowercase-options-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\verification-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\verification-symbol-of-a-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\verified-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\verified-shopping-cart-e-commerce-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\vertical-lines-and-cross-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\vertical-rectangle-with-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\webcam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\window-of-rectangular-shapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\windows-in-a-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\window-with-asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\xls-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\png\xml-file.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

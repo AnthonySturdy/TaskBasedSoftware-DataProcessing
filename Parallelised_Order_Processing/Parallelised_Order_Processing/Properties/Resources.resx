@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="abc-verification-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\abc-verification-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-interface-circular-symbol-with-plus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\add-interface-circular-symbol-with-plus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-rectangular-shape-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\add-rectangular-shape-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-square-button-with-three-vertical-rectangles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\add-square-button-with-three-vertical-rectangles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-window-grid-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\add-window-grid-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adobe-reader-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\adobe-reader-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adobe-reader-logotype-with-two-arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\adobe-reader-logotype-with-two-arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="atom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\atom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back-left-arrow-and-man-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\back-left-arrow-and-man-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back-search-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\back-search-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bars-graphic-business-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\bars-graphic-business-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="binoculars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\binoculars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="binoculars-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\binoculars-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="binoculars-with-left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\binoculars-with-left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="binoculars-with-right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\binoculars-with-right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-open-folder-symbol-of-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\black-open-folder-symbol-of-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-paper-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\black-paper-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-paper-with-right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\black-paper-with-right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blocked-shopping-cart-e-commerce-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\blocked-shopping-cart-e-commerce-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="block-file-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\block-file-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bold-button-of-letter-b-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\bold-button-of-letter-b-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-back-button-with-left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-back-button-with-left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-configuration-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-configuration-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-download-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-download-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-of-music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-of-music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-protection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-protection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-search-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-search-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-symbol-with-right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-symbol-with-right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-verification-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-verification-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-with-circular-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-with-circular-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-with-cross-delete-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-with-cross-delete-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-with-keyhole-for-security" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-with-keyhole-for-security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-with-upload-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\book-with-upload-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="borders-size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\borders-size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bricks-pattern-square-button-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\bricks-pattern-square-button-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="browser-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\browser-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business-graphic-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\business-graphic-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculator-interface-symbol-of-four-buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\calculator-interface-symbol-of-four-buttons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel-shopping-cart-e-commerce-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\cancel-shopping-cart-e-commerce-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cascade-visualization-option-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\cascade-visualization-option-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cf-in-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\cf-in-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circle-with-diagonal-line-inside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circle-with-diagonal-line-inside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circle-with-lines-and-dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circle-with-lines-and-dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular-arrow-around-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circular-arrow-around-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular-arrow-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circular-arrow-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular-clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circular-clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular-ring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circular-ring.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circular-shape-divided-in-three-areas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\circular-shape-divided-in-three-areas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard-and-notebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard-and-notebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard-with-paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard-with-paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard-with-right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard-with-right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard-with-text-paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clipboard-with-text-paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock-in-a-square-with-one-rounded-corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\clock-in-a-square-with-one-rounded-corner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close-cross-symbol-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\close-cross-symbol-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\color-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer-monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\computer-monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configuration-cogwheel-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\configuration-cogwheel-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contacts-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\contacts-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy-two-paper-sheets-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\copy-two-paper-sheets-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross-delete-or-close-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\cross-delete-or-close-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\crown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csv-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\csv-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daily-calendar-on-day-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\daily-calendar-on-day-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database-configuration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\database-configuration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database-security" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\database-security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database-verification-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\database-verification-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\delete-database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-file-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\delete-file-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-file-symbol-of-paper-sheet-with-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\delete-file-symbol-of-paper-sheet-with-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-user-male-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\delete-user-male-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="design-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\design-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dice-face-with-one-dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\dice-face-with-one-dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dice-with-five-dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\dice-with-five-dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diskette-save-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\diskette-save-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doc-file-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\doc-file-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domino-piece" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\domino-piece.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domino-piece-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\domino-piece-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domino-piece-of-square-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\domino-piece-of-square-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domino-piece-with-six-dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\domino-piece-with-six-dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domino-tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\domino-tile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dots-beginning-text-lines-interface-button-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\dots-beginning-text-lines-interface-button-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="double-up-and-down-arrow-between-two-horizontal-bars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\double-up-and-down-arrow-between-two-horizontal-bars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="double-wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\double-wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down-arrow-file-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\down-arrow-file-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down-arrow-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\down-arrow-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down-arrow-in-a-circle-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\down-arrow-in-a-circle-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-business-statistics-symbol-of-a-graphic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-business-statistics-symbol-of-a-graphic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-down-arrow-circular-signal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-down-arrow-circular-signal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-down-arrow-symbol-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-down-arrow-symbol-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-file-symbol-with-an-asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-file-symbol-with-an-asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-grid-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-grid-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-picture-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-picture-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download-text-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\download-text-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eight-rectangles-divided-in-two-columns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\eight-rectangles-divided-in-two-columns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email-frontal-envelope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\email-frontal-envelope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exclamation-sign-in-oval-speech-bubble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\exclamation-sign-in-oval-speech-bubble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye-in-a-magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\eye-in-a-magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\feet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-configuration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\file-configuration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-dark-symbol-with-a-clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\file-dark-symbol-with-a-clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\file-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-with-right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\file-with-right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\folder-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder-with-papers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\folder-with-papers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder-with-papers-inside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\folder-with-papers-inside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon-file-type-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\fon-file-type-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forbidden-reading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\forbidden-reading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="four-centered-lines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\four-centered-lines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="four-horizontal-lines-with-down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\four-horizontal-lines-with-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="four-horizontal-lines-with-one-different" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\four-horizontal-lines-with-one-different.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="four-squares-with-frame-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\four-squares-with-frame-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="from-grid-to-list-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\from-grid-to-list-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fx-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\fx-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="games-control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\games-control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geometrical-shapes-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\geometrical-shapes-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geometric-shapes-group-with-down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\geometric-shapes-group-with-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hammer-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\hammer-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="header-and-feet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\header-and-feet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart-shape-in-a-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\heart-shape-in-a-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="height-rectangular-shape-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\height-rectangular-shape-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\home-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontal-lines-and-cross-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\horizontal-lines-and-cross-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontal-lines-symbol-with-one-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\horizontal-lines-symbol-with-one-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontal-or-vertical-paper-position-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\horizontal-or-vertical-paper-position-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontal-rectangle-divided-in-two-with-arrows-to-sides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\horizontal-rectangle-divided-in-two-with-arrows-to-sides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontal-rectangles-symbol-of-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\horizontal-rectangles-symbol-of-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="increase-size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\increase-size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="increase-size-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\increase-size-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\indent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indent-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\indent-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information-circular-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\information-circular-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interface-tool-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\interface-tool-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interface-verification-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\interface-verification-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="international-certification-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\international-certification-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intersection-area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\intersection-area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\italic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyboard-key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\keyboard-key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-on-rounded-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key-on-rounded-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-or-password-plus-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key-or-password-plus-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-with-a-star-security-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\key-with-a-star-security-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="landscape-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\landscape-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="learning-abecedary-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\learning-abecedary-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left-alignment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\left-alignment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left-alignment-five-rectangles-outline-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\left-alignment-five-rectangles-outline-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left-arrow-circular-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\left-arrow-circular-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter-a-square-button-symbol-with-one-rounded-corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\letter-a-square-button-symbol-with-one-rounded-corner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter-p-and-pie-graphic-in-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\letter-p-and-pie-graphic-in-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter-sign-in-a-square-with-one-rounded-corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\letter-sign-in-a-square-with-one-rounded-corner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter-size-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\letter-size-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="letter-v-button-of-square-shape-with-one-rounded-corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\letter-v-button-of-square-shape-with-one-rounded-corner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightbulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\lightbulb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightbulb-black-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\lightbulb-black-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link-symbol-in-a-square-with-down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\link-symbol-in-a-square-with-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list-with-numbers-interface-option" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\list-with-numbers-interface-option.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock-database-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\lock-database-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locked-book-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\locked-book-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locked-padlock-security-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\locked-padlock-security-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locked-protected-file-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\locked-protected-file-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock-user-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\lock-user-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-of-letter-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\logo-of-letter-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magic-wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\magic-wand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnifier-search-symbol-with-right-arrow-inside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\magnifier-search-symbol-with-right-arrow-inside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man-and-right-arrow-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\man-and-right-arrow-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manuscript-rolled-paper-with-two-rolls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\manuscript-rolled-paper-with-two-rolls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man-with-ascending-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\man-with-ascending-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man-with-down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\man-with-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man-with-prohibition-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\man-with-prohibition-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu-symbol-of-four-lines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\menu-symbol-of-four-lines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="microphone-in-diagonal-position" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\microphone-in-diagonal-position.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus-sign-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\minus-sign-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musical-note-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\musical-note-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nine-dots-in-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\nine-dots-in-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\notebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notebook-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\notebook-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notes-tools-symbol-of-a-clipboard-and-notebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\notes-tools-symbol-of-a-clipboard-and-notebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="number-one" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\number-one.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numbers-sequence-verification-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\numbers-sequence-verification-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numeral-rectangular-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\numeral-rectangular-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numeral-sign-in-black-vertical-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\numeral-sign-in-black-vertical-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omega-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\omega-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omega-sign-in-a-square-with-down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\omega-sign-in-a-square-with-down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open-text-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\open-text-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oriental-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\oriental-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="otf-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\otf-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oval-speech-bubble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\oval-speech-bubble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oval-speech-bubble-with-smiling-signs-inside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\oval-speech-bubble-with-smiling-signs-inside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paint-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paint-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paperclip-attach-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paperclip-attach-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-sheet-with-a-pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paper-sheet-with-a-pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-sheet-with-left-arrow-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paper-sheet-with-left-arrow-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="papers-stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\papers-stack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paragraph-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\paragraph-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pdf-file-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\pdf-file-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pencil-diagonal-outline-symbol-on-a-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\pencil-diagonal-outline-symbol-on-a-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pencil-writing-on-a-paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\pencil-writing-on-a-paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\person-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personal-configuration-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\personal-configuration-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personal-information-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\personal-information-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personal-security-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\personal-security-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phones-contacts-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\phones-contacts-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo-camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\photo-camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picture-of-stripes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\picture-of-stripes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playing-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\playing-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playing-card-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\playing-card-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playing-card-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\playing-card-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plugins-in-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\plugins-in-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plugs-in-square-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\plugs-in-square-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus-button-of-a-rectangle-and-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\plus-button-of-a-rectangle-and-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus-zoom-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\plus-zoom-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="portrait-image-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\portrait-image-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ppt-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\ppt-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer-machine-with-paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\printer-machine-with-paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print-interface-symbol-of-a-printer-machine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\print-interface-symbol-of-a-printer-machine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question-file-symbol-of-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\question-file-symbol-of-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question-mark-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\question-mark-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reading-time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\reading-time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-grid-design-with-header-and-left-column" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-grid-design-with-header-and-left-column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-in-a-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-in-a-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangles-symbol-with-intersection-area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangles-symbol-with-intersection-area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangle-with-broken-line-in-the-middle-and-two-arrows-pointing-to-sides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangle-with-broken-line-in-the-middle-and-two-arrows-pointing-to-sides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangle-with-verification-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangle-with-verification-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangular-black-paper-with-text-lines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangular-black-paper-with-text-lines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangular-dark-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangular-dark-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangular-paper-with-rectangles-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangular-paper-with-rectangles-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangular-space-symbol-for-date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangular-space-symbol-for-date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangular-vertical-shape-with-rectangles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rectangular-vertical-shape-with-rectangles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reduce-zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\reduce-zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-arrow-circular-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\right-arrow-circular-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-arrow-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\right-arrow-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-arrow-signal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\right-arrow-signal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-menu-bars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\right-menu-bars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="road-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\road-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotating-circular-arrow-symbol-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rotating-circular-arrow-symbol-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="royal-crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\royal-crown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rtf-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\rtf-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sand-clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sand-clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scissors-pointing-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\scissors-pointing-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scissors-pointing-down-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\scissors-pointing-down-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="screwdriver-shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\screwdriver-shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\search-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="searching-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\searching-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="searching-file-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\searching-file-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-magnifier-symbol-of-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\search-magnifier-symbol-of-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-symbol-of-a-magnifier-with-a-letter-inside" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\search-symbol-of-a-magnifier-with-a-letter-inside.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-tool-in-a-rectangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\search-tool-in-a-rectangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="select-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\select-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="semaphore-of-three-lights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\semaphore-of-three-lights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shape-size-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shape-size-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoppin-cart-back-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shoppin-cart-back-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-information-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-information-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-lock-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-lock-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-preferences-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-preferences-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-right-arrow-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-right-arrow-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-with-down-arrow-e-commerce-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-with-down-arrow-e-commerce-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-with-time-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-with-time-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-with-up-arrow-e-commerce-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\shopping-cart-with-up-arrow-e-commerce-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign-of-a-line-and-a-rotated-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign-of-a-line-and-a-rotated-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign-with-symmetry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sign-with-symmetry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-domino-piece" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-domino-piece.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-domino-piece-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-domino-piece-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-rectangles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-rectangles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-rectangles-and-a-pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-rectangles-and-a-pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-rectangles-design-structure-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-rectangles-design-structure-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six-rectangles-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\six-rectangles-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sort-ascending-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\sort-ascending-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square-plus-add-button-with-three-squares-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\square-plus-add-button-with-three-squares-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squares-design-tool-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\squares-design-tool-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squares-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\squares-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square-symbol-with-a-cross-inside-and-four-dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\square-symbol-with-a-cross-inside-and-four-dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square-with-diagonal-line-and-dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\square-with-diagonal-line-and-dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star-outline-favorite-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\star-outline-favorite-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strikethrough-text-interface-option-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\strikethrough-text-interface-option-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="superscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\superscript.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telephone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\telephone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-file-dark-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-file-dark-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-file-verification-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-file-verification-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-paper-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-paper-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-paper-with-two-rectangles-outlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-paper-with-two-rectangles-outlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text-tool-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\text-tool-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-databases-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-databases-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-geometrical-shapes-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-geometrical-shapes-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-horizontal-lines-with-plus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-horizontal-lines-with-plus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-rectangles-symbol-of-interface-with-one-bigger-and-black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-rectangles-symbol-of-interface-with-one-bigger-and-black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-squares" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-squares.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-squares-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-squares-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three-vertical-lines-with-a-cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\three-vertical-lines-with-a-cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time-control-interface-symbol-of-an-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\time-control-interface-symbol-of-an-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash-container" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\trash-container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="triangle-of-stripes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\triangle-of-stripes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ttp-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\ttp-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-arrows-in-a-rectangle-divided-by-broken-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-arrows-in-a-rectangle-divided-by-broken-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-arrows-in-rectangles-pointing-to-the-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-arrows-in-rectangles-pointing-to-the-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-arrows-pointing-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-arrows-pointing-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-black-paper-sheets-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-black-paper-sheets-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-circular-arrows-symbol-in-a-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-circular-arrows-symbol-in-a-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-curved-back-arrows-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-curved-back-arrows-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-databases" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-databases.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-equal-rectangles-with-arrows-pointing-the-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-equal-rectangles-with-arrows-pointing-the-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-grids-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-grids-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-squares-symbol-with-double-arrow-pointing-to-both-sides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-squares-symbol-with-double-arrow-pointing-to-both-sides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-vertical-bars-with-two-arrows-at-sides-pointing-to-the-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-vertical-bars-with-two-arrows-at-sides-pointing-to-the-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-vertical-rectangles-with-arrows-pointing-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-vertical-rectangles-with-arrows-pointing-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two-windows-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\two-windows-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txt-text-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\txt-text-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="typography-interface-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\typography-interface-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="underlined-text-option" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\underlined-text-option.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="underlined-text-option-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\underlined-text-option-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\unlock-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up-and-down-arrows-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\up-and-down-arrows-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload-circular-symbol-of-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\upload-circular-symbol-of-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload-file-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\upload-file-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uppercase-or-lowercase-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\uppercase-or-lowercase-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uppercase-or-lowercase-options-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\uppercase-or-lowercase-options-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verification-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\verification-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verification-symbol-of-a-man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\verification-symbol-of-a-man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verified-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\verified-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verified-shopping-cart-e-commerce-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\verified-shopping-cart-e-commerce-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vertical-lines-and-cross-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\vertical-lines-and-cross-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vertical-rectangle-with-frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\vertical-rectangle-with-frame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="width" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\width.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window-of-rectangular-shapes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\window-of-rectangular-shapes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows-in-a-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\windows-in-a-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window-with-asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\window-with-asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xls-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\xls-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xml-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\png\xml-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

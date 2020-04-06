@@ -1,0 +1,749 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:07
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-abc-verification-symbol:before { content: "\f100"; }
+.flaticon-add-interface-circular-symbol-with-plus-sign:before { content: "\f101"; }
+.flaticon-add-rectangular-shape-button:before { content: "\f102"; }
+.flaticon-add-square-button-with-three-vertical-rectangles:before { content: "\f103"; }
+.flaticon-add-window-grid-symbol:before { content: "\f104"; }
+.flaticon-adobe-reader-logo:before { content: "\f105"; }
+.flaticon-adobe-reader-logotype-with-two-arrows:before { content: "\f106"; }
+.flaticon-atom:before { content: "\f107"; }
+.flaticon-back-left-arrow-and-man-symbol:before { content: "\f108"; }
+.flaticon-back-search-interface-symbol:before { content: "\f109"; }
+.flaticon-bars-graphic-business-symbol:before { content: "\f10a"; }
+.flaticon-binoculars:before { content: "\f10b"; }
+.flaticon-binoculars-1:before { content: "\f10c"; }
+.flaticon-binoculars-with-left-arrow:before { content: "\f10d"; }
+.flaticon-binoculars-with-right-arrow:before { content: "\f10e"; }
+.flaticon-black-open-folder-symbol-of-interface:before { content: "\f10f"; }
+.flaticon-black-paper-symbol:before { content: "\f110"; }
+.flaticon-black-paper-with-right-arrow:before { content: "\f111"; }
+.flaticon-block-file-symbol:before { content: "\f112"; }
+.flaticon-blocked-shopping-cart-e-commerce-symbol:before { content: "\f113"; }
+.flaticon-bold-button-of-letter-b-symbol:before { content: "\f114"; }
+.flaticon-book:before { content: "\f115"; }
+.flaticon-book-back-button-with-left-arrow:before { content: "\f116"; }
+.flaticon-book-configuration-interface-symbol:before { content: "\f117"; }
+.flaticon-book-download-interface-symbol:before { content: "\f118"; }
+.flaticon-book-information:before { content: "\f119"; }
+.flaticon-book-of-music:before { content: "\f11a"; }
+.flaticon-book-protection:before { content: "\f11b"; }
+.flaticon-book-search-interface-symbol:before { content: "\f11c"; }
+.flaticon-book-symbol-with-right-arrow:before { content: "\f11d"; }
+.flaticon-book-verification-interface-symbol:before { content: "\f11e"; }
+.flaticon-book-with-circular-arrow:before { content: "\f11f"; }
+.flaticon-book-with-cross-delete-symbol:before { content: "\f120"; }
+.flaticon-book-with-keyhole-for-security:before { content: "\f121"; }
+.flaticon-book-with-upload-symbol:before { content: "\f122"; }
+.flaticon-borders-size:before { content: "\f123"; }
+.flaticon-bricks-pattern-square-button-interface-symbol:before { content: "\f124"; }
+.flaticon-browser-symbol:before { content: "\f125"; }
+.flaticon-business-graphic-symbol:before { content: "\f126"; }
+.flaticon-calculator-interface-symbol-of-four-buttons:before { content: "\f127"; }
+.flaticon-cancel-shopping-cart-e-commerce-interface-symbol:before { content: "\f128"; }
+.flaticon-cascade-visualization-option-interface-button:before { content: "\f129"; }
+.flaticon-cf-in-a-square:before { content: "\f12a"; }
+.flaticon-circle-with-diagonal-line-inside:before { content: "\f12b"; }
+.flaticon-circle-with-lines-and-dots:before { content: "\f12c"; }
+.flaticon-circular-arrow-around-a-circle:before { content: "\f12d"; }
+.flaticon-circular-arrow-in-a-circle:before { content: "\f12e"; }
+.flaticon-circular-clock:before { content: "\f12f"; }
+.flaticon-circular-ring:before { content: "\f130"; }
+.flaticon-circular-shape-divided-in-three-areas:before { content: "\f131"; }
+.flaticon-clipboard:before { content: "\f132"; }
+.flaticon-clipboard-1:before { content: "\f133"; }
+.flaticon-clipboard-and-notebook:before { content: "\f134"; }
+.flaticon-clipboard-with-paper:before { content: "\f135"; }
+.flaticon-clipboard-with-right-arrow:before { content: "\f136"; }
+.flaticon-clipboard-with-text-paper:before { content: "\f137"; }
+.flaticon-clock-in-a-square-with-one-rounded-corner:before { content: "\f138"; }
+.flaticon-close-cross-symbol-in-a-circle:before { content: "\f139"; }
+.flaticon-color-text:before { content: "\f13a"; }
+.flaticon-computer-monitor:before { content: "\f13b"; }
+.flaticon-configuration-cogwheel-interface-symbol:before { content: "\f13c"; }
+.flaticon-contacts-book:before { content: "\f13d"; }
+.flaticon-copy-two-paper-sheets-interface-symbol:before { content: "\f13e"; }
+.flaticon-cross-delete-or-close-interface-symbol:before { content: "\f13f"; }
+.flaticon-crown:before { content: "\f140"; }
+.flaticon-csv-file:before { content: "\f141"; }
+.flaticon-daily-calendar-on-day-3:before { content: "\f142"; }
+.flaticon-database:before { content: "\f143"; }
+.flaticon-database-configuration:before { content: "\f144"; }
+.flaticon-database-security:before { content: "\f145"; }
+.flaticon-database-verification-symbol:before { content: "\f146"; }
+.flaticon-delete-database:before { content: "\f147"; }
+.flaticon-delete-file-symbol:before { content: "\f148"; }
+.flaticon-delete-file-symbol-of-paper-sheet-with-text:before { content: "\f149"; }
+.flaticon-delete-user-male-interface-symbol:before { content: "\f14a"; }
+.flaticon-design-interface-symbol:before { content: "\f14b"; }
+.flaticon-dice-face-with-one-dot:before { content: "\f14c"; }
+.flaticon-dice-with-five-dots:before { content: "\f14d"; }
+.flaticon-diskette-save-interface-symbol:before { content: "\f14e"; }
+.flaticon-doc-file-interface-symbol:before { content: "\f14f"; }
+.flaticon-domino-piece:before { content: "\f150"; }
+.flaticon-domino-piece-1:before { content: "\f151"; }
+.flaticon-domino-piece-of-square-shape:before { content: "\f152"; }
+.flaticon-domino-piece-with-six-dots:before { content: "\f153"; }
+.flaticon-domino-tile:before { content: "\f154"; }
+.flaticon-door:before { content: "\f155"; }
+.flaticon-dots-beginning-text-lines-interface-button-symbol:before { content: "\f156"; }
+.flaticon-double-up-and-down-arrow-between-two-horizontal-bars:before { content: "\f157"; }
+.flaticon-double-wrench:before { content: "\f158"; }
+.flaticon-down-arrow-file-symbol:before { content: "\f159"; }
+.flaticon-down-arrow-in-a-circle:before { content: "\f15a"; }
+.flaticon-down-arrow-in-a-circle-1:before { content: "\f15b"; }
+.flaticon-download-business-statistics-symbol-of-a-graphic:before { content: "\f15c"; }
+.flaticon-download-down-arrow-circular-signal:before { content: "\f15d"; }
+.flaticon-download-down-arrow-symbol-in-a-circle:before { content: "\f15e"; }
+.flaticon-download-file:before { content: "\f15f"; }
+.flaticon-download-file-symbol-with-an-asterisk:before { content: "\f160"; }
+.flaticon-download-grid-symbol:before { content: "\f161"; }
+.flaticon-download-picture-interface-symbol:before { content: "\f162"; }
+.flaticon-download-text-file:before { content: "\f163"; }
+.flaticon-eight-rectangles-divided-in-two-columns:before { content: "\f164"; }
+.flaticon-email-frontal-envelope:before { content: "\f165"; }
+.flaticon-exclamation-sign-in-oval-speech-bubble:before { content: "\f166"; }
+.flaticon-eye-in-a-magnifier:before { content: "\f167"; }
+.flaticon-feet:before { content: "\f168"; }
+.flaticon-file-configuration:before { content: "\f169"; }
+.flaticon-file-dark-symbol-with-a-clock:before { content: "\f16a"; }
+.flaticon-file-information:before { content: "\f16b"; }
+.flaticon-file-with-right-arrow:before { content: "\f16c"; }
+.flaticon-folder:before { content: "\f16d"; }
+.flaticon-folder-1:before { content: "\f16e"; }
+.flaticon-folder-with-papers:before { content: "\f16f"; }
+.flaticon-folder-with-papers-inside:before { content: "\f170"; }
+.flaticon-fon-file-type-interface-symbol:before { content: "\f171"; }
+.flaticon-forbidden-reading:before { content: "\f172"; }
+.flaticon-four-centered-lines:before { content: "\f173"; }
+.flaticon-four-horizontal-lines-with-down-arrow:before { content: "\f174"; }
+.flaticon-four-horizontal-lines-with-one-different:before { content: "\f175"; }
+.flaticon-four-squares-with-frame-shape:before { content: "\f176"; }
+.flaticon-from-grid-to-list-interface-symbol:before { content: "\f177"; }
+.flaticon-fx-sign:before { content: "\f178"; }
+.flaticon-games-control:before { content: "\f179"; }
+.flaticon-geometric-shapes-group-with-down-arrow:before { content: "\f17a"; }
+.flaticon-geometrical-shapes-group:before { content: "\f17b"; }
+.flaticon-grid:before { content: "\f17c"; }
+.flaticon-hammer-shape:before { content: "\f17d"; }
+.flaticon-header-and-feet:before { content: "\f17e"; }
+.flaticon-heart-shape-in-a-rectangle:before { content: "\f17f"; }
+.flaticon-height-rectangular-shape-symbol:before { content: "\f180"; }
+.flaticon-home-interface-symbol:before { content: "\f181"; }
+.flaticon-horizontal-lines-and-cross-interface-symbol:before { content: "\f182"; }
+.flaticon-horizontal-lines-symbol-with-one-square:before { content: "\f183"; }
+.flaticon-horizontal-or-vertical-paper-position-interface-button:before { content: "\f184"; }
+.flaticon-horizontal-rectangle-divided-in-two-with-arrows-to-sides:before { content: "\f185"; }
+.flaticon-horizontal-rectangles-symbol-of-interface:before { content: "\f186"; }
+.flaticon-increase-size:before { content: "\f187"; }
+.flaticon-increase-size-interface-symbol:before { content: "\f188"; }
+.flaticon-indent:before { content: "\f189"; }
+.flaticon-indent-interface-symbol:before { content: "\f18a"; }
+.flaticon-information-circular-button:before { content: "\f18b"; }
+.flaticon-interface-tool-symbol:before { content: "\f18c"; }
+.flaticon-interface-verification-symbol:before { content: "\f18d"; }
+.flaticon-international-certification-symbol:before { content: "\f18e"; }
+.flaticon-intersection-area:before { content: "\f18f"; }
+.flaticon-italic:before { content: "\f190"; }
+.flaticon-key:before { content: "\f191"; }
+.flaticon-key-on-rounded-rectangle:before { content: "\f192"; }
+.flaticon-key-or-password-plus-interface-button:before { content: "\f193"; }
+.flaticon-key-symbol:before { content: "\f194"; }
+.flaticon-key-tool:before { content: "\f195"; }
+.flaticon-key-with-a-star-security-interface-symbol:before { content: "\f196"; }
+.flaticon-keyboard-key:before { content: "\f197"; }
+.flaticon-landscape-image:before { content: "\f198"; }
+.flaticon-learning-abecedary-tool:before { content: "\f199"; }
+.flaticon-left-alignment:before { content: "\f19a"; }
+.flaticon-left-alignment-five-rectangles-outline-symbol:before { content: "\f19b"; }
+.flaticon-left-arrow-circular-symbol:before { content: "\f19c"; }
+.flaticon-letter-a-square-button-symbol-with-one-rounded-corner:before { content: "\f19d"; }
+.flaticon-letter-p-and-pie-graphic-in-a-square:before { content: "\f19e"; }
+.flaticon-letter-sign-in-a-square-with-one-rounded-corner:before { content: "\f19f"; }
+.flaticon-letter-size-interface-button:before { content: "\f1a0"; }
+.flaticon-letter-v-button-of-square-shape-with-one-rounded-corner:before { content: "\f1a1"; }
+.flaticon-lightbulb:before { content: "\f1a2"; }
+.flaticon-lightbulb-black-shape:before { content: "\f1a3"; }
+.flaticon-link-symbol-in-a-square-with-down-arrow:before { content: "\f1a4"; }
+.flaticon-list-with-numbers-interface-option:before { content: "\f1a5"; }
+.flaticon-lock-database-button:before { content: "\f1a6"; }
+.flaticon-lock-user-symbol:before { content: "\f1a7"; }
+.flaticon-locked-book-symbol:before { content: "\f1a8"; }
+.flaticon-locked-padlock-security-interface-symbol:before { content: "\f1a9"; }
+.flaticon-locked-protected-file-interface-symbol:before { content: "\f1aa"; }
+.flaticon-logo-of-letter-shape:before { content: "\f1ab"; }
+.flaticon-magic-wand:before { content: "\f1ac"; }
+.flaticon-magnifier-search-symbol-with-right-arrow-inside:before { content: "\f1ad"; }
+.flaticon-man-and-right-arrow-symbol:before { content: "\f1ae"; }
+.flaticon-man-with-ascending-arrow:before { content: "\f1af"; }
+.flaticon-man-with-down-arrow:before { content: "\f1b0"; }
+.flaticon-man-with-prohibition-symbol:before { content: "\f1b1"; }
+.flaticon-manuscript-rolled-paper-with-two-rolls:before { content: "\f1b2"; }
+.flaticon-menu-symbol-of-four-lines:before { content: "\f1b3"; }
+.flaticon-microphone-in-diagonal-position:before { content: "\f1b4"; }
+.flaticon-minus-sign-in-a-circle:before { content: "\f1b5"; }
+.flaticon-monitor:before { content: "\f1b6"; }
+.flaticon-musical-note-sign:before { content: "\f1b7"; }
+.flaticon-nine-dots-in-a-square:before { content: "\f1b8"; }
+.flaticon-notebook:before { content: "\f1b9"; }
+.flaticon-notebook-1:before { content: "\f1ba"; }
+.flaticon-notes-tools-symbol-of-a-clipboard-and-notebook:before { content: "\f1bb"; }
+.flaticon-number-one:before { content: "\f1bc"; }
+.flaticon-numbers-sequence-verification-symbol:before { content: "\f1bd"; }
+.flaticon-numeral-rectangular-button:before { content: "\f1be"; }
+.flaticon-numeral-sign-in-black-vertical-rectangle:before { content: "\f1bf"; }
+.flaticon-omega-sign:before { content: "\f1c0"; }
+.flaticon-omega-sign-in-a-square-with-down-arrow:before { content: "\f1c1"; }
+.flaticon-open-text-book:before { content: "\f1c2"; }
+.flaticon-oriental-sign:before { content: "\f1c3"; }
+.flaticon-otf-file:before { content: "\f1c4"; }
+.flaticon-oval-speech-bubble:before { content: "\f1c5"; }
+.flaticon-oval-speech-bubble-with-smiling-signs-inside:before { content: "\f1c6"; }
+.flaticon-paint-tool:before { content: "\f1c7"; }
+.flaticon-paper:before { content: "\f1c8"; }
+.flaticon-paper-sheet-with-a-pencil:before { content: "\f1c9"; }
+.flaticon-paper-sheet-with-left-arrow-symbol:before { content: "\f1ca"; }
+.flaticon-paperclip-attach-symbol:before { content: "\f1cb"; }
+.flaticon-papers-stack:before { content: "\f1cc"; }
+.flaticon-paragraph-sign:before { content: "\f1cd"; }
+.flaticon-pdf-file-symbol:before { content: "\f1ce"; }
+.flaticon-pencil-diagonal-outline-symbol-on-a-line:before { content: "\f1cf"; }
+.flaticon-pencil-writing-on-a-paper:before { content: "\f1d0"; }
+.flaticon-person:before { content: "\f1d1"; }
+.flaticon-person-1:before { content: "\f1d2"; }
+.flaticon-personal-configuration-interface-symbol:before { content: "\f1d3"; }
+.flaticon-personal-information-interface-symbol:before { content: "\f1d4"; }
+.flaticon-personal-security-symbol:before { content: "\f1d5"; }
+.flaticon-phones-contacts-book:before { content: "\f1d6"; }
+.flaticon-photo-camera:before { content: "\f1d7"; }
+.flaticon-picture-of-stripes:before { content: "\f1d8"; }
+.flaticon-playing-card:before { content: "\f1d9"; }
+.flaticon-playing-card-1:before { content: "\f1da"; }
+.flaticon-playing-card-symbol:before { content: "\f1db"; }
+.flaticon-plugins-in-a-square:before { content: "\f1dc"; }
+.flaticon-plugs-in-square-symbol:before { content: "\f1dd"; }
+.flaticon-plus-button-of-a-rectangle-and-a-square:before { content: "\f1de"; }
+.flaticon-plus-zoom-symbol:before { content: "\f1df"; }
+.flaticon-portrait-image-symbol:before { content: "\f1e0"; }
+.flaticon-ppt-file:before { content: "\f1e1"; }
+.flaticon-print-interface-symbol-of-a-printer-machine:before { content: "\f1e2"; }
+.flaticon-printer:before { content: "\f1e3"; }
+.flaticon-printer-machine-with-paper:before { content: "\f1e4"; }
+.flaticon-question-file-symbol-of-interface:before { content: "\f1e5"; }
+.flaticon-question-mark-in-a-circle:before { content: "\f1e6"; }
+.flaticon-reading-time:before { content: "\f1e7"; }
+.flaticon-rectangle-with-broken-line-in-the-middle-and-two-arrows-pointing-to-sides:before { content: "\f1e8"; }
+.flaticon-rectangle-with-verification-sign:before { content: "\f1e9"; }
+.flaticon-rectangles-grid:before { content: "\f1ea"; }
+.flaticon-rectangles-grid-design-with-header-and-left-column:before { content: "\f1eb"; }
+.flaticon-rectangles-in-a-rectangle:before { content: "\f1ec"; }
+.flaticon-rectangles-interface-symbol:before { content: "\f1ed"; }
+.flaticon-rectangles-symbol:before { content: "\f1ee"; }
+.flaticon-rectangles-symbol-with-intersection-area:before { content: "\f1ef"; }
+.flaticon-rectangular-black-paper-with-text-lines:before { content: "\f1f0"; }
+.flaticon-rectangular-dark-symbol:before { content: "\f1f1"; }
+.flaticon-rectangular-paper-with-rectangles-design:before { content: "\f1f2"; }
+.flaticon-rectangular-space-symbol-for-date:before { content: "\f1f3"; }
+.flaticon-rectangular-vertical-shape-with-rectangles:before { content: "\f1f4"; }
+.flaticon-reduce-zoom:before { content: "\f1f5"; }
+.flaticon-right-arrow:before { content: "\f1f6"; }
+.flaticon-right-arrow-circular-symbol:before { content: "\f1f7"; }
+.flaticon-right-arrow-in-a-circle:before { content: "\f1f8"; }
+.flaticon-right-arrow-signal:before { content: "\f1f9"; }
+.flaticon-right-menu-bars:before { content: "\f1fa"; }
+.flaticon-road-symbol:before { content: "\f1fb"; }
+.flaticon-rotating-circular-arrow-symbol-in-a-circle:before { content: "\f1fc"; }
+.flaticon-royal-crown:before { content: "\f1fd"; }
+.flaticon-rtf-file:before { content: "\f1fe"; }
+.flaticon-sand-clock:before { content: "\f1ff"; }
+.flaticon-scissors-pointing-down:before { content: "\f200"; }
+.flaticon-scissors-pointing-down-1:before { content: "\f201"; }
+.flaticon-screwdriver-shape:before { content: "\f202"; }
+.flaticon-search-file:before { content: "\f203"; }
+.flaticon-search-magnifier-symbol-of-interface:before { content: "\f204"; }
+.flaticon-search-symbol-of-a-magnifier-with-a-letter-inside:before { content: "\f205"; }
+.flaticon-search-tool-in-a-rectangle:before { content: "\f206"; }
+.flaticon-searching-file:before { content: "\f207"; }
+.flaticon-searching-file-interface-symbol:before { content: "\f208"; }
+.flaticon-select-text:before { content: "\f209"; }
+.flaticon-semaphore-of-three-lights:before { content: "\f20a"; }
+.flaticon-shape-size-interface-symbol:before { content: "\f20b"; }
+.flaticon-shoppin-cart-back-button:before { content: "\f20c"; }
+.flaticon-shopping-cart-information-interface-button:before { content: "\f20d"; }
+.flaticon-shopping-cart-lock:before { content: "\f20e"; }
+.flaticon-shopping-cart-lock-symbol:before { content: "\f20f"; }
+.flaticon-shopping-cart-preferences-symbol:before { content: "\f210"; }
+.flaticon-shopping-cart-question:before { content: "\f211"; }
+.flaticon-shopping-cart-right-arrow-button:before { content: "\f212"; }
+.flaticon-shopping-cart-with-down-arrow-e-commerce-symbol:before { content: "\f213"; }
+.flaticon-shopping-cart-with-time-symbol:before { content: "\f214"; }
+.flaticon-shopping-cart-with-up-arrow-e-commerce-symbol:before { content: "\f215"; }
+.flaticon-sign:before { content: "\f216"; }
+.flaticon-sign-1:before { content: "\f217"; }
+.flaticon-sign-2:before { content: "\f218"; }
+.flaticon-sign-3:before { content: "\f219"; }
+.flaticon-sign-of-a-line-and-a-rotated-square:before { content: "\f21a"; }
+.flaticon-sign-with-symmetry:before { content: "\f21b"; }
+.flaticon-six-domino-piece:before { content: "\f21c"; }
+.flaticon-six-domino-piece-1:before { content: "\f21d"; }
+.flaticon-six-rectangles:before { content: "\f21e"; }
+.flaticon-six-rectangles-and-a-pencil:before { content: "\f21f"; }
+.flaticon-six-rectangles-design-structure-interface-symbol:before { content: "\f220"; }
+.flaticon-six-rectangles-symbol:before { content: "\f221"; }
+.flaticon-sort-ascending-button:before { content: "\f222"; }
+.flaticon-square-plus-add-button-with-three-squares-outline:before { content: "\f223"; }
+.flaticon-square-symbol-with-a-cross-inside-and-four-dots:before { content: "\f224"; }
+.flaticon-square-with-diagonal-line-and-dots:before { content: "\f225"; }
+.flaticon-squares-design-tool-interface-symbol:before { content: "\f226"; }
+.flaticon-squares-interface-symbol:before { content: "\f227"; }
+.flaticon-star-outline-favorite-interface-symbol:before { content: "\f228"; }
+.flaticon-strikethrough-text-interface-option-button:before { content: "\f229"; }
+.flaticon-superscript:before { content: "\f22a"; }
+.flaticon-telephone:before { content: "\f22b"; }
+.flaticon-text-book:before { content: "\f22c"; }
+.flaticon-text-file-dark-symbol:before { content: "\f22d"; }
+.flaticon-text-file-verification-interface-symbol:before { content: "\f22e"; }
+.flaticon-text-paper-interface-symbol:before { content: "\f22f"; }
+.flaticon-text-paper-with-two-rectangles-outlines:before { content: "\f230"; }
+.flaticon-text-tool-symbol:before { content: "\f231"; }
+.flaticon-three-databases-symbol:before { content: "\f232"; }
+.flaticon-three-geometrical-shapes-interface-symbol:before { content: "\f233"; }
+.flaticon-three-horizontal-lines-with-plus-sign:before { content: "\f234"; }
+.flaticon-three-rectangles-symbol-of-interface-with-one-bigger-and-black:before { content: "\f235"; }
+.flaticon-three-squares:before { content: "\f236"; }
+.flaticon-three-squares-interface-symbol:before { content: "\f237"; }
+.flaticon-three-vertical-lines-with-a-cross:before { content: "\f238"; }
+.flaticon-time-control-interface-symbol-of-an-user:before { content: "\f239"; }
+.flaticon-trash-container:before { content: "\f23a"; }
+.flaticon-triangle-of-stripes:before { content: "\f23b"; }
+.flaticon-ttp-file:before { content: "\f23c"; }
+.flaticon-two-arrows-in-a-rectangle-divided-by-broken-line:before { content: "\f23d"; }
+.flaticon-two-arrows-in-rectangles-pointing-to-the-center:before { content: "\f23e"; }
+.flaticon-two-arrows-pointing-center:before { content: "\f23f"; }
+.flaticon-two-black-paper-sheets-symbol:before { content: "\f240"; }
+.flaticon-two-circular-arrows-symbol-in-a-circle:before { content: "\f241"; }
+.flaticon-two-curved-back-arrows-symbol:before { content: "\f242"; }
+.flaticon-two-databases:before { content: "\f243"; }
+.flaticon-two-equal-rectangles-with-arrows-pointing-the-center:before { content: "\f244"; }
+.flaticon-two-grids-interface-symbol:before { content: "\f245"; }
+.flaticon-two-squares-symbol-with-double-arrow-pointing-to-both-sides:before { content: "\f246"; }
+.flaticon-two-vertical-bars-with-two-arrows-at-sides-pointing-to-the-center:before { content: "\f247"; }
+.flaticon-two-vertical-rectangles-with-arrows-pointing-out:before { content: "\f248"; }
+.flaticon-two-windows-interface-symbol:before { content: "\f249"; }
+.flaticon-txt-text-file:before { content: "\f24a"; }
+.flaticon-typography-interface-button:before { content: "\f24b"; }
+.flaticon-underlined-text-option:before { content: "\f24c"; }
+.flaticon-underlined-text-option-interface-symbol:before { content: "\f24d"; }
+.flaticon-unlock:before { content: "\f24e"; }
+.flaticon-unlock-file:before { content: "\f24f"; }
+.flaticon-up-and-down-arrows-symbol:before { content: "\f250"; }
+.flaticon-upload:before { content: "\f251"; }
+.flaticon-upload-circular-symbol-of-interface:before { content: "\f252"; }
+.flaticon-upload-file-symbol:before { content: "\f253"; }
+.flaticon-uppercase-or-lowercase-button:before { content: "\f254"; }
+.flaticon-uppercase-or-lowercase-options-button:before { content: "\f255"; }
+.flaticon-verification-sign:before { content: "\f256"; }
+.flaticon-verification-symbol-of-a-man:before { content: "\f257"; }
+.flaticon-verified-file:before { content: "\f258"; }
+.flaticon-verified-shopping-cart-e-commerce-symbol:before { content: "\f259"; }
+.flaticon-vertical-lines-and-cross-interface-symbol:before { content: "\f25a"; }
+.flaticon-vertical-rectangle-with-frame:before { content: "\f25b"; }
+.flaticon-webcam:before { content: "\f25c"; }
+.flaticon-width:before { content: "\f25d"; }
+.flaticon-window-of-rectangular-shapes:before { content: "\f25e"; }
+.flaticon-window-with-asterisk:before { content: "\f25f"; }
+.flaticon-windows-in-a-square:before { content: "\f260"; }
+.flaticon-xls-file:before { content: "\f261"; }
+.flaticon-xml-file:before { content: "\f262"; }
+    
+    $font-Flaticon-abc-verification-symbol: "\f100";
+    $font-Flaticon-add-interface-circular-symbol-with-plus-sign: "\f101";
+    $font-Flaticon-add-rectangular-shape-button: "\f102";
+    $font-Flaticon-add-square-button-with-three-vertical-rectangles: "\f103";
+    $font-Flaticon-add-window-grid-symbol: "\f104";
+    $font-Flaticon-adobe-reader-logo: "\f105";
+    $font-Flaticon-adobe-reader-logotype-with-two-arrows: "\f106";
+    $font-Flaticon-atom: "\f107";
+    $font-Flaticon-back-left-arrow-and-man-symbol: "\f108";
+    $font-Flaticon-back-search-interface-symbol: "\f109";
+    $font-Flaticon-bars-graphic-business-symbol: "\f10a";
+    $font-Flaticon-binoculars: "\f10b";
+    $font-Flaticon-binoculars-1: "\f10c";
+    $font-Flaticon-binoculars-with-left-arrow: "\f10d";
+    $font-Flaticon-binoculars-with-right-arrow: "\f10e";
+    $font-Flaticon-black-open-folder-symbol-of-interface: "\f10f";
+    $font-Flaticon-black-paper-symbol: "\f110";
+    $font-Flaticon-black-paper-with-right-arrow: "\f111";
+    $font-Flaticon-block-file-symbol: "\f112";
+    $font-Flaticon-blocked-shopping-cart-e-commerce-symbol: "\f113";
+    $font-Flaticon-bold-button-of-letter-b-symbol: "\f114";
+    $font-Flaticon-book: "\f115";
+    $font-Flaticon-book-back-button-with-left-arrow: "\f116";
+    $font-Flaticon-book-configuration-interface-symbol: "\f117";
+    $font-Flaticon-book-download-interface-symbol: "\f118";
+    $font-Flaticon-book-information: "\f119";
+    $font-Flaticon-book-of-music: "\f11a";
+    $font-Flaticon-book-protection: "\f11b";
+    $font-Flaticon-book-search-interface-symbol: "\f11c";
+    $font-Flaticon-book-symbol-with-right-arrow: "\f11d";
+    $font-Flaticon-book-verification-interface-symbol: "\f11e";
+    $font-Flaticon-book-with-circular-arrow: "\f11f";
+    $font-Flaticon-book-with-cross-delete-symbol: "\f120";
+    $font-Flaticon-book-with-keyhole-for-security: "\f121";
+    $font-Flaticon-book-with-upload-symbol: "\f122";
+    $font-Flaticon-borders-size: "\f123";
+    $font-Flaticon-bricks-pattern-square-button-interface-symbol: "\f124";
+    $font-Flaticon-browser-symbol: "\f125";
+    $font-Flaticon-business-graphic-symbol: "\f126";
+    $font-Flaticon-calculator-interface-symbol-of-four-buttons: "\f127";
+    $font-Flaticon-cancel-shopping-cart-e-commerce-interface-symbol: "\f128";
+    $font-Flaticon-cascade-visualization-option-interface-button: "\f129";
+    $font-Flaticon-cf-in-a-square: "\f12a";
+    $font-Flaticon-circle-with-diagonal-line-inside: "\f12b";
+    $font-Flaticon-circle-with-lines-and-dots: "\f12c";
+    $font-Flaticon-circular-arrow-around-a-circle: "\f12d";
+    $font-Flaticon-circular-arrow-in-a-circle: "\f12e";
+    $font-Flaticon-circular-clock: "\f12f";
+    $font-Flaticon-circular-ring: "\f130";
+    $font-Flaticon-circular-shape-divided-in-three-areas: "\f131";
+    $font-Flaticon-clipboard: "\f132";
+    $font-Flaticon-clipboard-1: "\f133";
+    $font-Flaticon-clipboard-and-notebook: "\f134";
+    $font-Flaticon-clipboard-with-paper: "\f135";
+    $font-Flaticon-clipboard-with-right-arrow: "\f136";
+    $font-Flaticon-clipboard-with-text-paper: "\f137";
+    $font-Flaticon-clock-in-a-square-with-one-rounded-corner: "\f138";
+    $font-Flaticon-close-cross-symbol-in-a-circle: "\f139";
+    $font-Flaticon-color-text: "\f13a";
+    $font-Flaticon-computer-monitor: "\f13b";
+    $font-Flaticon-configuration-cogwheel-interface-symbol: "\f13c";
+    $font-Flaticon-contacts-book: "\f13d";
+    $font-Flaticon-copy-two-paper-sheets-interface-symbol: "\f13e";
+    $font-Flaticon-cross-delete-or-close-interface-symbol: "\f13f";
+    $font-Flaticon-crown: "\f140";
+    $font-Flaticon-csv-file: "\f141";
+    $font-Flaticon-daily-calendar-on-day-3: "\f142";
+    $font-Flaticon-database: "\f143";
+    $font-Flaticon-database-configuration: "\f144";
+    $font-Flaticon-database-security: "\f145";
+    $font-Flaticon-database-verification-symbol: "\f146";
+    $font-Flaticon-delete-database: "\f147";
+    $font-Flaticon-delete-file-symbol: "\f148";
+    $font-Flaticon-delete-file-symbol-of-paper-sheet-with-text: "\f149";
+    $font-Flaticon-delete-user-male-interface-symbol: "\f14a";
+    $font-Flaticon-design-interface-symbol: "\f14b";
+    $font-Flaticon-dice-face-with-one-dot: "\f14c";
+    $font-Flaticon-dice-with-five-dots: "\f14d";
+    $font-Flaticon-diskette-save-interface-symbol: "\f14e";
+    $font-Flaticon-doc-file-interface-symbol: "\f14f";
+    $font-Flaticon-domino-piece: "\f150";
+    $font-Flaticon-domino-piece-1: "\f151";
+    $font-Flaticon-domino-piece-of-square-shape: "\f152";
+    $font-Flaticon-domino-piece-with-six-dots: "\f153";
+    $font-Flaticon-domino-tile: "\f154";
+    $font-Flaticon-door: "\f155";
+    $font-Flaticon-dots-beginning-text-lines-interface-button-symbol: "\f156";
+    $font-Flaticon-double-up-and-down-arrow-between-two-horizontal-bars: "\f157";
+    $font-Flaticon-double-wrench: "\f158";
+    $font-Flaticon-down-arrow-file-symbol: "\f159";
+    $font-Flaticon-down-arrow-in-a-circle: "\f15a";
+    $font-Flaticon-down-arrow-in-a-circle-1: "\f15b";
+    $font-Flaticon-download-business-statistics-symbol-of-a-graphic: "\f15c";
+    $font-Flaticon-download-down-arrow-circular-signal: "\f15d";
+    $font-Flaticon-download-down-arrow-symbol-in-a-circle: "\f15e";
+    $font-Flaticon-download-file: "\f15f";
+    $font-Flaticon-download-file-symbol-with-an-asterisk: "\f160";
+    $font-Flaticon-download-grid-symbol: "\f161";
+    $font-Flaticon-download-picture-interface-symbol: "\f162";
+    $font-Flaticon-download-text-file: "\f163";
+    $font-Flaticon-eight-rectangles-divided-in-two-columns: "\f164";
+    $font-Flaticon-email-frontal-envelope: "\f165";
+    $font-Flaticon-exclamation-sign-in-oval-speech-bubble: "\f166";
+    $font-Flaticon-eye-in-a-magnifier: "\f167";
+    $font-Flaticon-feet: "\f168";
+    $font-Flaticon-file-configuration: "\f169";
+    $font-Flaticon-file-dark-symbol-with-a-clock: "\f16a";
+    $font-Flaticon-file-information: "\f16b";
+    $font-Flaticon-file-with-right-arrow: "\f16c";
+    $font-Flaticon-folder: "\f16d";
+    $font-Flaticon-folder-1: "\f16e";
+    $font-Flaticon-folder-with-papers: "\f16f";
+    $font-Flaticon-folder-with-papers-inside: "\f170";
+    $font-Flaticon-fon-file-type-interface-symbol: "\f171";
+    $font-Flaticon-forbidden-reading: "\f172";
+    $font-Flaticon-four-centered-lines: "\f173";
+    $font-Flaticon-four-horizontal-lines-with-down-arrow: "\f174";
+    $font-Flaticon-four-horizontal-lines-with-one-different: "\f175";
+    $font-Flaticon-four-squares-with-frame-shape: "\f176";
+    $font-Flaticon-from-grid-to-list-interface-symbol: "\f177";
+    $font-Flaticon-fx-sign: "\f178";
+    $font-Flaticon-games-control: "\f179";
+    $font-Flaticon-geometric-shapes-group-with-down-arrow: "\f17a";
+    $font-Flaticon-geometrical-shapes-group: "\f17b";
+    $font-Flaticon-grid: "\f17c";
+    $font-Flaticon-hammer-shape: "\f17d";
+    $font-Flaticon-header-and-feet: "\f17e";
+    $font-Flaticon-heart-shape-in-a-rectangle: "\f17f";
+    $font-Flaticon-height-rectangular-shape-symbol: "\f180";
+    $font-Flaticon-home-interface-symbol: "\f181";
+    $font-Flaticon-horizontal-lines-and-cross-interface-symbol: "\f182";
+    $font-Flaticon-horizontal-lines-symbol-with-one-square: "\f183";
+    $font-Flaticon-horizontal-or-vertical-paper-position-interface-button: "\f184";
+    $font-Flaticon-horizontal-rectangle-divided-in-two-with-arrows-to-sides: "\f185";
+    $font-Flaticon-horizontal-rectangles-symbol-of-interface: "\f186";
+    $font-Flaticon-increase-size: "\f187";
+    $font-Flaticon-increase-size-interface-symbol: "\f188";
+    $font-Flaticon-indent: "\f189";
+    $font-Flaticon-indent-interface-symbol: "\f18a";
+    $font-Flaticon-information-circular-button: "\f18b";
+    $font-Flaticon-interface-tool-symbol: "\f18c";
+    $font-Flaticon-interface-verification-symbol: "\f18d";
+    $font-Flaticon-international-certification-symbol: "\f18e";
+    $font-Flaticon-intersection-area: "\f18f";
+    $font-Flaticon-italic: "\f190";
+    $font-Flaticon-key: "\f191";
+    $font-Flaticon-key-on-rounded-rectangle: "\f192";
+    $font-Flaticon-key-or-password-plus-interface-button: "\f193";
+    $font-Flaticon-key-symbol: "\f194";
+    $font-Flaticon-key-tool: "\f195";
+    $font-Flaticon-key-with-a-star-security-interface-symbol: "\f196";
+    $font-Flaticon-keyboard-key: "\f197";
+    $font-Flaticon-landscape-image: "\f198";
+    $font-Flaticon-learning-abecedary-tool: "\f199";
+    $font-Flaticon-left-alignment: "\f19a";
+    $font-Flaticon-left-alignment-five-rectangles-outline-symbol: "\f19b";
+    $font-Flaticon-left-arrow-circular-symbol: "\f19c";
+    $font-Flaticon-letter-a-square-button-symbol-with-one-rounded-corner: "\f19d";
+    $font-Flaticon-letter-p-and-pie-graphic-in-a-square: "\f19e";
+    $font-Flaticon-letter-sign-in-a-square-with-one-rounded-corner: "\f19f";
+    $font-Flaticon-letter-size-interface-button: "\f1a0";
+    $font-Flaticon-letter-v-button-of-square-shape-with-one-rounded-corner: "\f1a1";
+    $font-Flaticon-lightbulb: "\f1a2";
+    $font-Flaticon-lightbulb-black-shape: "\f1a3";
+    $font-Flaticon-link-symbol-in-a-square-with-down-arrow: "\f1a4";
+    $font-Flaticon-list-with-numbers-interface-option: "\f1a5";
+    $font-Flaticon-lock-database-button: "\f1a6";
+    $font-Flaticon-lock-user-symbol: "\f1a7";
+    $font-Flaticon-locked-book-symbol: "\f1a8";
+    $font-Flaticon-locked-padlock-security-interface-symbol: "\f1a9";
+    $font-Flaticon-locked-protected-file-interface-symbol: "\f1aa";
+    $font-Flaticon-logo-of-letter-shape: "\f1ab";
+    $font-Flaticon-magic-wand: "\f1ac";
+    $font-Flaticon-magnifier-search-symbol-with-right-arrow-inside: "\f1ad";
+    $font-Flaticon-man-and-right-arrow-symbol: "\f1ae";
+    $font-Flaticon-man-with-ascending-arrow: "\f1af";
+    $font-Flaticon-man-with-down-arrow: "\f1b0";
+    $font-Flaticon-man-with-prohibition-symbol: "\f1b1";
+    $font-Flaticon-manuscript-rolled-paper-with-two-rolls: "\f1b2";
+    $font-Flaticon-menu-symbol-of-four-lines: "\f1b3";
+    $font-Flaticon-microphone-in-diagonal-position: "\f1b4";
+    $font-Flaticon-minus-sign-in-a-circle: "\f1b5";
+    $font-Flaticon-monitor: "\f1b6";
+    $font-Flaticon-musical-note-sign: "\f1b7";
+    $font-Flaticon-nine-dots-in-a-square: "\f1b8";
+    $font-Flaticon-notebook: "\f1b9";
+    $font-Flaticon-notebook-1: "\f1ba";
+    $font-Flaticon-notes-tools-symbol-of-a-clipboard-and-notebook: "\f1bb";
+    $font-Flaticon-number-one: "\f1bc";
+    $font-Flaticon-numbers-sequence-verification-symbol: "\f1bd";
+    $font-Flaticon-numeral-rectangular-button: "\f1be";
+    $font-Flaticon-numeral-sign-in-black-vertical-rectangle: "\f1bf";
+    $font-Flaticon-omega-sign: "\f1c0";
+    $font-Flaticon-omega-sign-in-a-square-with-down-arrow: "\f1c1";
+    $font-Flaticon-open-text-book: "\f1c2";
+    $font-Flaticon-oriental-sign: "\f1c3";
+    $font-Flaticon-otf-file: "\f1c4";
+    $font-Flaticon-oval-speech-bubble: "\f1c5";
+    $font-Flaticon-oval-speech-bubble-with-smiling-signs-inside: "\f1c6";
+    $font-Flaticon-paint-tool: "\f1c7";
+    $font-Flaticon-paper: "\f1c8";
+    $font-Flaticon-paper-sheet-with-a-pencil: "\f1c9";
+    $font-Flaticon-paper-sheet-with-left-arrow-symbol: "\f1ca";
+    $font-Flaticon-paperclip-attach-symbol: "\f1cb";
+    $font-Flaticon-papers-stack: "\f1cc";
+    $font-Flaticon-paragraph-sign: "\f1cd";
+    $font-Flaticon-pdf-file-symbol: "\f1ce";
+    $font-Flaticon-pencil-diagonal-outline-symbol-on-a-line: "\f1cf";
+    $font-Flaticon-pencil-writing-on-a-paper: "\f1d0";
+    $font-Flaticon-person: "\f1d1";
+    $font-Flaticon-person-1: "\f1d2";
+    $font-Flaticon-personal-configuration-interface-symbol: "\f1d3";
+    $font-Flaticon-personal-information-interface-symbol: "\f1d4";
+    $font-Flaticon-personal-security-symbol: "\f1d5";
+    $font-Flaticon-phones-contacts-book: "\f1d6";
+    $font-Flaticon-photo-camera: "\f1d7";
+    $font-Flaticon-picture-of-stripes: "\f1d8";
+    $font-Flaticon-playing-card: "\f1d9";
+    $font-Flaticon-playing-card-1: "\f1da";
+    $font-Flaticon-playing-card-symbol: "\f1db";
+    $font-Flaticon-plugins-in-a-square: "\f1dc";
+    $font-Flaticon-plugs-in-square-symbol: "\f1dd";
+    $font-Flaticon-plus-button-of-a-rectangle-and-a-square: "\f1de";
+    $font-Flaticon-plus-zoom-symbol: "\f1df";
+    $font-Flaticon-portrait-image-symbol: "\f1e0";
+    $font-Flaticon-ppt-file: "\f1e1";
+    $font-Flaticon-print-interface-symbol-of-a-printer-machine: "\f1e2";
+    $font-Flaticon-printer: "\f1e3";
+    $font-Flaticon-printer-machine-with-paper: "\f1e4";
+    $font-Flaticon-question-file-symbol-of-interface: "\f1e5";
+    $font-Flaticon-question-mark-in-a-circle: "\f1e6";
+    $font-Flaticon-reading-time: "\f1e7";
+    $font-Flaticon-rectangle-with-broken-line-in-the-middle-and-two-arrows-pointing-to-sides: "\f1e8";
+    $font-Flaticon-rectangle-with-verification-sign: "\f1e9";
+    $font-Flaticon-rectangles-grid: "\f1ea";
+    $font-Flaticon-rectangles-grid-design-with-header-and-left-column: "\f1eb";
+    $font-Flaticon-rectangles-in-a-rectangle: "\f1ec";
+    $font-Flaticon-rectangles-interface-symbol: "\f1ed";
+    $font-Flaticon-rectangles-symbol: "\f1ee";
+    $font-Flaticon-rectangles-symbol-with-intersection-area: "\f1ef";
+    $font-Flaticon-rectangular-black-paper-with-text-lines: "\f1f0";
+    $font-Flaticon-rectangular-dark-symbol: "\f1f1";
+    $font-Flaticon-rectangular-paper-with-rectangles-design: "\f1f2";
+    $font-Flaticon-rectangular-space-symbol-for-date: "\f1f3";
+    $font-Flaticon-rectangular-vertical-shape-with-rectangles: "\f1f4";
+    $font-Flaticon-reduce-zoom: "\f1f5";
+    $font-Flaticon-right-arrow: "\f1f6";
+    $font-Flaticon-right-arrow-circular-symbol: "\f1f7";
+    $font-Flaticon-right-arrow-in-a-circle: "\f1f8";
+    $font-Flaticon-right-arrow-signal: "\f1f9";
+    $font-Flaticon-right-menu-bars: "\f1fa";
+    $font-Flaticon-road-symbol: "\f1fb";
+    $font-Flaticon-rotating-circular-arrow-symbol-in-a-circle: "\f1fc";
+    $font-Flaticon-royal-crown: "\f1fd";
+    $font-Flaticon-rtf-file: "\f1fe";
+    $font-Flaticon-sand-clock: "\f1ff";
+    $font-Flaticon-scissors-pointing-down: "\f200";
+    $font-Flaticon-scissors-pointing-down-1: "\f201";
+    $font-Flaticon-screwdriver-shape: "\f202";
+    $font-Flaticon-search-file: "\f203";
+    $font-Flaticon-search-magnifier-symbol-of-interface: "\f204";
+    $font-Flaticon-search-symbol-of-a-magnifier-with-a-letter-inside: "\f205";
+    $font-Flaticon-search-tool-in-a-rectangle: "\f206";
+    $font-Flaticon-searching-file: "\f207";
+    $font-Flaticon-searching-file-interface-symbol: "\f208";
+    $font-Flaticon-select-text: "\f209";
+    $font-Flaticon-semaphore-of-three-lights: "\f20a";
+    $font-Flaticon-shape-size-interface-symbol: "\f20b";
+    $font-Flaticon-shoppin-cart-back-button: "\f20c";
+    $font-Flaticon-shopping-cart-information-interface-button: "\f20d";
+    $font-Flaticon-shopping-cart-lock: "\f20e";
+    $font-Flaticon-shopping-cart-lock-symbol: "\f20f";
+    $font-Flaticon-shopping-cart-preferences-symbol: "\f210";
+    $font-Flaticon-shopping-cart-question: "\f211";
+    $font-Flaticon-shopping-cart-right-arrow-button: "\f212";
+    $font-Flaticon-shopping-cart-with-down-arrow-e-commerce-symbol: "\f213";
+    $font-Flaticon-shopping-cart-with-time-symbol: "\f214";
+    $font-Flaticon-shopping-cart-with-up-arrow-e-commerce-symbol: "\f215";
+    $font-Flaticon-sign: "\f216";
+    $font-Flaticon-sign-1: "\f217";
+    $font-Flaticon-sign-2: "\f218";
+    $font-Flaticon-sign-3: "\f219";
+    $font-Flaticon-sign-of-a-line-and-a-rotated-square: "\f21a";
+    $font-Flaticon-sign-with-symmetry: "\f21b";
+    $font-Flaticon-six-domino-piece: "\f21c";
+    $font-Flaticon-six-domino-piece-1: "\f21d";
+    $font-Flaticon-six-rectangles: "\f21e";
+    $font-Flaticon-six-rectangles-and-a-pencil: "\f21f";
+    $font-Flaticon-six-rectangles-design-structure-interface-symbol: "\f220";
+    $font-Flaticon-six-rectangles-symbol: "\f221";
+    $font-Flaticon-sort-ascending-button: "\f222";
+    $font-Flaticon-square-plus-add-button-with-three-squares-outline: "\f223";
+    $font-Flaticon-square-symbol-with-a-cross-inside-and-four-dots: "\f224";
+    $font-Flaticon-square-with-diagonal-line-and-dots: "\f225";
+    $font-Flaticon-squares-design-tool-interface-symbol: "\f226";
+    $font-Flaticon-squares-interface-symbol: "\f227";
+    $font-Flaticon-star-outline-favorite-interface-symbol: "\f228";
+    $font-Flaticon-strikethrough-text-interface-option-button: "\f229";
+    $font-Flaticon-superscript: "\f22a";
+    $font-Flaticon-telephone: "\f22b";
+    $font-Flaticon-text-book: "\f22c";
+    $font-Flaticon-text-file-dark-symbol: "\f22d";
+    $font-Flaticon-text-file-verification-interface-symbol: "\f22e";
+    $font-Flaticon-text-paper-interface-symbol: "\f22f";
+    $font-Flaticon-text-paper-with-two-rectangles-outlines: "\f230";
+    $font-Flaticon-text-tool-symbol: "\f231";
+    $font-Flaticon-three-databases-symbol: "\f232";
+    $font-Flaticon-three-geometrical-shapes-interface-symbol: "\f233";
+    $font-Flaticon-three-horizontal-lines-with-plus-sign: "\f234";
+    $font-Flaticon-three-rectangles-symbol-of-interface-with-one-bigger-and-black: "\f235";
+    $font-Flaticon-three-squares: "\f236";
+    $font-Flaticon-three-squares-interface-symbol: "\f237";
+    $font-Flaticon-three-vertical-lines-with-a-cross: "\f238";
+    $font-Flaticon-time-control-interface-symbol-of-an-user: "\f239";
+    $font-Flaticon-trash-container: "\f23a";
+    $font-Flaticon-triangle-of-stripes: "\f23b";
+    $font-Flaticon-ttp-file: "\f23c";
+    $font-Flaticon-two-arrows-in-a-rectangle-divided-by-broken-line: "\f23d";
+    $font-Flaticon-two-arrows-in-rectangles-pointing-to-the-center: "\f23e";
+    $font-Flaticon-two-arrows-pointing-center: "\f23f";
+    $font-Flaticon-two-black-paper-sheets-symbol: "\f240";
+    $font-Flaticon-two-circular-arrows-symbol-in-a-circle: "\f241";
+    $font-Flaticon-two-curved-back-arrows-symbol: "\f242";
+    $font-Flaticon-two-databases: "\f243";
+    $font-Flaticon-two-equal-rectangles-with-arrows-pointing-the-center: "\f244";
+    $font-Flaticon-two-grids-interface-symbol: "\f245";
+    $font-Flaticon-two-squares-symbol-with-double-arrow-pointing-to-both-sides: "\f246";
+    $font-Flaticon-two-vertical-bars-with-two-arrows-at-sides-pointing-to-the-center: "\f247";
+    $font-Flaticon-two-vertical-rectangles-with-arrows-pointing-out: "\f248";
+    $font-Flaticon-two-windows-interface-symbol: "\f249";
+    $font-Flaticon-txt-text-file: "\f24a";
+    $font-Flaticon-typography-interface-button: "\f24b";
+    $font-Flaticon-underlined-text-option: "\f24c";
+    $font-Flaticon-underlined-text-option-interface-symbol: "\f24d";
+    $font-Flaticon-unlock: "\f24e";
+    $font-Flaticon-unlock-file: "\f24f";
+    $font-Flaticon-up-and-down-arrows-symbol: "\f250";
+    $font-Flaticon-upload: "\f251";
+    $font-Flaticon-upload-circular-symbol-of-interface: "\f252";
+    $font-Flaticon-upload-file-symbol: "\f253";
+    $font-Flaticon-uppercase-or-lowercase-button: "\f254";
+    $font-Flaticon-uppercase-or-lowercase-options-button: "\f255";
+    $font-Flaticon-verification-sign: "\f256";
+    $font-Flaticon-verification-symbol-of-a-man: "\f257";
+    $font-Flaticon-verified-file: "\f258";
+    $font-Flaticon-verified-shopping-cart-e-commerce-symbol: "\f259";
+    $font-Flaticon-vertical-lines-and-cross-interface-symbol: "\f25a";
+    $font-Flaticon-vertical-rectangle-with-frame: "\f25b";
+    $font-Flaticon-webcam: "\f25c";
+    $font-Flaticon-width: "\f25d";
+    $font-Flaticon-window-of-rectangular-shapes: "\f25e";
+    $font-Flaticon-window-with-asterisk: "\f25f";
+    $font-Flaticon-windows-in-a-square: "\f260";
+    $font-Flaticon-xls-file: "\f261";
+    $font-Flaticon-xml-file: "\f262";
