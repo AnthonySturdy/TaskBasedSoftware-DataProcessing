@@ -57,80 +57,128 @@ namespace Parallelised_Order_Processing {
             }
         }
 
-        private void LoadDataButton_Click(object sender, EventArgs e) {
-            // Store information loaded from files
-            ConcurrentDictionary<string, Store> stores = new ConcurrentDictionary<string, Store>();
-            ConcurrentDictionary<Date, byte> dates = new ConcurrentDictionary<Date, byte>();
-            ConcurrentDictionary<Supplier, byte> suppliers = new ConcurrentDictionary<Supplier, byte>();
-            List<Order> orders = new List<Order>();
+        // Store information loaded from files
+        SortedDictionary<string, Store> stores = new SortedDictionary<string, Store>();
+        HashSet<Date> dates = new HashSet<Date>();
+        HashSet<string> supplierNames = new HashSet<string>();
+        HashSet<string> supplierTypes = new HashSet<string>();
+        ConcurrentBag<Order> orders = new ConcurrentBag<Order>();
 
+        private void LoadDataButton_Click(object sender, EventArgs e) {
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
             // Load store data
             string[] storeData = File.ReadAllLines(SelectStoreInfoTextBox.Text);
-            Parallel.ForEach(storeData, line => ProcessStoreDataLine(line, ref stores));
+            foreach(string line in storeData) {
+                ProcessStoreDataLine(line);
+            }
 
             // Load order data
             string[] fileNames = Directory.GetFiles(DataDirectoryTextBox.Text);
-            FileLoadingProgressBar.Maximum = fileNames.Length;
+            FileLoadingProgressBar.Maximum = fileNames.Length;  //Set maximum of progress bar
+            FileLoadingProgressBar.Value = 0;
+
+            // Ensure folder isn't empty
             if (fileNames.Length == 0)
                 MessageBox.Show("Can't find any order data in specified file path", "Invalid File Path", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            Parallel.ForEach(fileNames, path => ProcessOrderData(path, ref stores, ref dates, ref suppliers, ref orders));
 
-            sw.Stop();
-            Console.WriteLine(sw.ElapsedMilliseconds);
+            foreach(string path in fileNames) {
+                if (Path.GetExtension(path) != ".csv")
+                    return;
 
-            int x = 0;
+                // Get stripped filename and split into StoreCode, Week and Year
+                string fileName = Path.GetFileNameWithoutExtension(path.Split('\\').Last());
+                string[] splitFileName = fileName.Split('_');
+
+                // Find which store coresponds to order data
+                Store store = stores[splitFileName[0]];
+
+                // Save date from filename into Date object
+                Date date = new Date();
+                date.week = Convert.ToInt32(splitFileName[1]);
+                date.year = Convert.ToInt32(splitFileName[2]);
+                dates.Add(date);
+
+                // Parallel process each line of order data
+                string[] orderData = File.ReadAllLines(path);
+                foreach(string orderLine in orderData) {
+                    ProcessOrderFile(orderLine, store, date);
+                }
+
+                // Progress bar and percentage loaded
+                FileLoadingProgressBar.Value++;
+                FileLoadingProgressBar.Refresh();
+                if(FileLoadingProgressBar.Value == FileLoadingProgressBar.Maximum) {
+                    LoadDataButton.Text = "Load Data";
+                    LoadDataButton.Enabled = true;
+                    LoadDataButton.Refresh();
+                } else {
+                    LoadDataButton.Text = "Loading Data: " + (int)(((float)FileLoadingProgressBar.Value / (float)FileLoadingProgressBar.Maximum)*100) + "%";
+                    LoadDataButton.Enabled = false;
+                    LoadDataButton.Refresh();
+                }
+            }
+
+            sw.Stop();  //Stop load data timer and print milliseconds
+            Console.WriteLine("Data Loaded in " + sw.ElapsedMilliseconds/1000.0f + " seconds.");
+
+            
+            PopulateListBoxes();
         }
 
-        void ProcessStoreDataLine(string line, ref ConcurrentDictionary<string, Store> stores) {
+        void ProcessStoreDataLine(string line) {
             string[] splitLine = line.Split(',');
             Store store = new Store();
             store.code = splitLine[0];
             store.location = splitLine[1];
             if (!stores.ContainsKey(store.code))
-                stores.TryAdd(store.code, store);
+                stores.Add(store.code, store);
         }
 
-        void ProcessOrderData(string path, ref ConcurrentDictionary<string, Store> stores, ref ConcurrentDictionary<Date, byte> dates, ref ConcurrentDictionary<Supplier, byte> suppliers, ref List<Order> orders) {
-            if (Path.GetExtension(path) != ".csv")
-                return;
+        void ProcessOrderFile(string orderLine, Store store, Date date) {
+            string[] splitOrderInfo = orderLine.Split(',');
 
-            // Get stripped filename and split into StoreCode, Week and Year
-            string fileName = Path.GetFileNameWithoutExtension(path.Split('\\').Last());
-            string[] splitFileName = fileName.Split('_');
+            // Add to supplier information HashSets
+            supplierNames.Add(splitOrderInfo[0]);
+            supplierTypes.Add(splitOrderInfo[1]);
 
-            // Find which store coresponds to order data
-            Store store = stores[splitFileName[0]];
+            // Create order object
+            Order order = new Order();
+            order.store = store;
+            order.date = date;
+            order.supplierName = splitOrderInfo[0];
+            order.supplierType = splitOrderInfo[1];
+            order.cost = Convert.ToDouble(splitOrderInfo[2]);
+            orders.Add(order);
+        }
 
-            // Save date from filename into Date object
-            Date date = new Date();
-            date.week = Convert.ToInt32(splitFileName[1]);
-            date.year = Convert.ToInt32(splitFileName[2]);
-            dates.TryAdd(date, 0x00);
+        void PopulateListBoxes() {
+            // Enable List Boxes
+            StoresListBox.Enabled = true;
+            SuppliersListBox.Enabled = true;
+            SupplierTypesListBox.Enabled = true;
 
-            // Process each line of order data
-            string[] orderData = File.ReadAllLines(path);
-            foreach(string orderLine in orderData) {
-                string[] splitOrderInfo = orderLine.Split(',');
-                Supplier supplier = new Supplier();
-                supplier.name = splitOrderInfo[0];
-                supplier.type = splitOrderInfo[1];
-                suppliers.TryAdd(supplier, 0x00);
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
 
-                Order order = new Order();
-                order.store = store;
-                order.date = date;
-                order.supplier = supplier;
-                order.cost = Convert.ToDouble(splitOrderInfo[2]);
-                orders.Add(order);
+            // Convert HashSets to Lists
+            List<string> supNames = supplierNames.ToList();
+            List<string> supTypes = supplierTypes.ToList();
+
+            // Populate all list boxes
+            foreach(string s in supNames) { 
+                SuppliersListBox.Items.Add(s);
+            }
+            foreach (string s in supTypes) {
+                SupplierTypesListBox.Items.Add(s);
+            }
+            foreach (var store in stores) {
+                StoresListBox.Items.Add(store.Value.location);
             }
 
-            // Increment loading bar
-            //if (FileLoadingProgressBar.InvokeRequired) {
-            //    FileLoadingProgressBar.Invoke(new MethodInvoker(delegate { FileLoadingProgressBar.Increment(1); }));
-            //}
+            sw.Stop();
+            Console.WriteLine("ListBoxes populated in " + sw.ElapsedMilliseconds / 1000.0f + " seconds.");
         }
 
     }
@@ -146,14 +194,10 @@ class Date {
     public int year;
 }
 
-class Supplier {
-    public string name;
-    public string type;
-}
-
 class Order {
     public Store store;
     public Date date;
-    public Supplier supplier;
+    public string supplierName;
+    public string supplierType;
     public double cost;
 }
