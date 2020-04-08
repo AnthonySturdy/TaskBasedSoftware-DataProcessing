@@ -37,6 +37,13 @@
             this.SuppliersListBox = new System.Windows.Forms.ListBox();
             this.SupplierTypesLabel = new System.Windows.Forms.Label();
             this.SupplierTypesListBox = new System.Windows.Forms.ListBox();
+            this.DatesLabel = new System.Windows.Forms.Label();
+            this.DatesListBox = new System.Windows.Forms.ListBox();
+            this.ViewGraphButton = new System.Windows.Forms.Button();
+            this.StoresDeselectLabel = new System.Windows.Forms.Label();
+            this.SuppliersDeactivateLabel = new System.Windows.Forms.Label();
+            this.SupplierTypesDeactivateLabel = new System.Windows.Forms.Label();
+            this.DateDeactivateLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoadDataDirectoryButton
@@ -127,8 +134,9 @@
             this.StoresListBox.FormattingEnabled = true;
             this.StoresListBox.Location = new System.Drawing.Point(12, 145);
             this.StoresListBox.Name = "StoresListBox";
-            this.StoresListBox.Size = new System.Drawing.Size(120, 186);
+            this.StoresListBox.Size = new System.Drawing.Size(166, 186);
             this.StoresListBox.TabIndex = 8;
+            this.StoresListBox.SelectedIndexChanged += new System.EventHandler(this.StoresListBox_SelectedIndexChanged);
             // 
             // StoresLabel
             // 
@@ -142,7 +150,7 @@
             // SuppliersLabel
             // 
             this.SuppliersLabel.AutoSize = true;
-            this.SuppliersLabel.Location = new System.Drawing.Point(135, 129);
+            this.SuppliersLabel.Location = new System.Drawing.Point(181, 129);
             this.SuppliersLabel.Name = "SuppliersLabel";
             this.SuppliersLabel.Size = new System.Drawing.Size(50, 13);
             this.SuppliersLabel.TabIndex = 11;
@@ -152,15 +160,16 @@
             // 
             this.SuppliersListBox.Enabled = false;
             this.SuppliersListBox.FormattingEnabled = true;
-            this.SuppliersListBox.Location = new System.Drawing.Point(138, 145);
+            this.SuppliersListBox.Location = new System.Drawing.Point(184, 145);
             this.SuppliersListBox.Name = "SuppliersListBox";
-            this.SuppliersListBox.Size = new System.Drawing.Size(120, 186);
+            this.SuppliersListBox.Size = new System.Drawing.Size(166, 186);
             this.SuppliersListBox.TabIndex = 10;
+            this.SuppliersListBox.SelectedIndexChanged += new System.EventHandler(this.SuppliersListBox_SelectedIndexChanged);
             // 
             // SupplierTypesLabel
             // 
             this.SupplierTypesLabel.AutoSize = true;
-            this.SupplierTypesLabel.Location = new System.Drawing.Point(261, 129);
+            this.SupplierTypesLabel.Location = new System.Drawing.Point(353, 129);
             this.SupplierTypesLabel.Name = "SupplierTypesLabel";
             this.SupplierTypesLabel.Size = new System.Drawing.Size(77, 13);
             this.SupplierTypesLabel.TabIndex = 13;
@@ -170,16 +179,102 @@
             // 
             this.SupplierTypesListBox.Enabled = false;
             this.SupplierTypesListBox.FormattingEnabled = true;
-            this.SupplierTypesListBox.Location = new System.Drawing.Point(264, 145);
+            this.SupplierTypesListBox.Location = new System.Drawing.Point(356, 145);
             this.SupplierTypesListBox.Name = "SupplierTypesListBox";
-            this.SupplierTypesListBox.Size = new System.Drawing.Size(120, 186);
+            this.SupplierTypesListBox.Size = new System.Drawing.Size(166, 186);
             this.SupplierTypesListBox.TabIndex = 12;
+            this.SupplierTypesListBox.SelectedIndexChanged += new System.EventHandler(this.SupplierTypesListBox_SelectedIndexChanged);
+            // 
+            // DatesLabel
+            // 
+            this.DatesLabel.AutoSize = true;
+            this.DatesLabel.Location = new System.Drawing.Point(525, 129);
+            this.DatesLabel.Name = "DatesLabel";
+            this.DatesLabel.Size = new System.Drawing.Size(35, 13);
+            this.DatesLabel.TabIndex = 15;
+            this.DatesLabel.Text = "Dates";
+            // 
+            // DatesListBox
+            // 
+            this.DatesListBox.Enabled = false;
+            this.DatesListBox.FormattingEnabled = true;
+            this.DatesListBox.Location = new System.Drawing.Point(528, 145);
+            this.DatesListBox.Name = "DatesListBox";
+            this.DatesListBox.Size = new System.Drawing.Size(166, 186);
+            this.DatesListBox.TabIndex = 14;
+            this.DatesListBox.SelectedIndexChanged += new System.EventHandler(this.DatesListBox_SelectedIndexChanged);
+            // 
+            // ViewGraphButton
+            // 
+            this.ViewGraphButton.Enabled = false;
+            this.ViewGraphButton.Location = new System.Drawing.Point(13, 337);
+            this.ViewGraphButton.Name = "ViewGraphButton";
+            this.ViewGraphButton.Size = new System.Drawing.Size(681, 38);
+            this.ViewGraphButton.TabIndex = 16;
+            this.ViewGraphButton.Text = "View orders from ALL stores, ALL suppliers, ALL supplier types and ALL dates";
+            this.ViewGraphButton.UseVisualStyleBackColor = true;
+            this.ViewGraphButton.Click += new System.EventHandler(this.ViewGraphButton_Click);
+            // 
+            // StoresDeselectLabel
+            // 
+            this.StoresDeselectLabel.AutoSize = true;
+            this.StoresDeselectLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.StoresDeselectLabel.Location = new System.Drawing.Point(129, 129);
+            this.StoresDeselectLabel.Name = "StoresDeselectLabel";
+            this.StoresDeselectLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StoresDeselectLabel.Size = new System.Drawing.Size(49, 13);
+            this.StoresDeselectLabel.TabIndex = 17;
+            this.StoresDeselectLabel.Text = "Deselect";
+            this.StoresDeselectLabel.Click += new System.EventHandler(this.StoresDeselectLabel_Click);
+            // 
+            // SuppliersDeactivateLabel
+            // 
+            this.SuppliersDeactivateLabel.AutoSize = true;
+            this.SuppliersDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SuppliersDeactivateLabel.Location = new System.Drawing.Point(301, 129);
+            this.SuppliersDeactivateLabel.Name = "SuppliersDeactivateLabel";
+            this.SuppliersDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.SuppliersDeactivateLabel.Size = new System.Drawing.Size(49, 13);
+            this.SuppliersDeactivateLabel.TabIndex = 18;
+            this.SuppliersDeactivateLabel.Text = "Deselect";
+            this.SuppliersDeactivateLabel.Click += new System.EventHandler(this.SuppliersDeactivateLabel_Click);
+            // 
+            // SupplierTypesDeactivateLabel
+            // 
+            this.SupplierTypesDeactivateLabel.AutoSize = true;
+            this.SupplierTypesDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SupplierTypesDeactivateLabel.Location = new System.Drawing.Point(473, 129);
+            this.SupplierTypesDeactivateLabel.Name = "SupplierTypesDeactivateLabel";
+            this.SupplierTypesDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.SupplierTypesDeactivateLabel.Size = new System.Drawing.Size(49, 13);
+            this.SupplierTypesDeactivateLabel.TabIndex = 19;
+            this.SupplierTypesDeactivateLabel.Text = "Deselect";
+            this.SupplierTypesDeactivateLabel.Click += new System.EventHandler(this.SupplierTypesDeactivateLabel_Click);
+            // 
+            // DateDeactivateLabel
+            // 
+            this.DateDeactivateLabel.AutoSize = true;
+            this.DateDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.DateDeactivateLabel.Location = new System.Drawing.Point(645, 129);
+            this.DateDeactivateLabel.Name = "DateDeactivateLabel";
+            this.DateDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DateDeactivateLabel.Size = new System.Drawing.Size(49, 13);
+            this.DateDeactivateLabel.TabIndex = 20;
+            this.DateDeactivateLabel.Text = "Deselect";
+            this.DateDeactivateLabel.Click += new System.EventHandler(this.DateDeactivateLabel_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 450);
+            this.ClientSize = new System.Drawing.Size(706, 386);
+            this.Controls.Add(this.DateDeactivateLabel);
+            this.Controls.Add(this.SupplierTypesDeactivateLabel);
+            this.Controls.Add(this.SuppliersDeactivateLabel);
+            this.Controls.Add(this.StoresDeselectLabel);
+            this.Controls.Add(this.ViewGraphButton);
+            this.Controls.Add(this.DatesLabel);
+            this.Controls.Add(this.DatesListBox);
             this.Controls.Add(this.SupplierTypesLabel);
             this.Controls.Add(this.SupplierTypesListBox);
             this.Controls.Add(this.SuppliersLabel);
@@ -218,6 +313,13 @@
         private System.Windows.Forms.ListBox SuppliersListBox;
         private System.Windows.Forms.Label SupplierTypesLabel;
         private System.Windows.Forms.ListBox SupplierTypesListBox;
+        private System.Windows.Forms.Label DatesLabel;
+        private System.Windows.Forms.ListBox DatesListBox;
+        private System.Windows.Forms.Button ViewGraphButton;
+        private System.Windows.Forms.Label StoresDeselectLabel;
+        private System.Windows.Forms.Label SuppliersDeactivateLabel;
+        private System.Windows.Forms.Label SupplierTypesDeactivateLabel;
+        private System.Windows.Forms.Label DateDeactivateLabel;
     }
 }
 

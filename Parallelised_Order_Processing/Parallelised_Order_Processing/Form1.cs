@@ -57,12 +57,20 @@ namespace Parallelised_Order_Processing {
             }
         }
 
-        // Store information loaded from files
+        // Globals
         SortedDictionary<string, Store> stores = new SortedDictionary<string, Store>();
-        HashSet<Date> dates = new HashSet<Date>();
+        HashSet<Date> dates = new HashSet<Date>(new DateComparer());
         HashSet<string> supplierNames = new HashSet<string>();
         HashSet<string> supplierTypes = new HashSet<string>();
-        ConcurrentBag<Order> orders = new ConcurrentBag<Order>();
+        List<Order> orders = new List<Order>();
+
+        int[] selectionIndices = { -1, -1, -1, -1 };
+        enum INDICES {
+            STORE = 0,
+            SUPPLIER = 1,
+            SUPPLIER_T = 2,
+            DATE = 3
+        }
 
         private void LoadDataButton_Click(object sender, EventArgs e) {
             Stopwatch sw = new Stopwatch();
@@ -83,6 +91,7 @@ namespace Parallelised_Order_Processing {
             if (fileNames.Length == 0)
                 MessageBox.Show("Can't find any order data in specified file path", "Invalid File Path", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+            // Loop through each file in data directory
             foreach(string path in fileNames) {
                 if (Path.GetExtension(path) != ".csv")
                     return;
@@ -123,7 +132,6 @@ namespace Parallelised_Order_Processing {
             sw.Stop();  //Stop load data timer and print milliseconds
             Console.WriteLine("Data Loaded in " + sw.ElapsedMilliseconds/1000.0f + " seconds.");
 
-            
             PopulateListBoxes();
         }
 
@@ -158,29 +166,99 @@ namespace Parallelised_Order_Processing {
             StoresListBox.Enabled = true;
             SuppliersListBox.Enabled = true;
             SupplierTypesListBox.Enabled = true;
+            DatesListBox.Enabled = true;
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            // Convert HashSets to Lists
-            List<string> supNames = supplierNames.ToList();
-            List<string> supTypes = supplierTypes.ToList();
-
             // Populate all list boxes
-            foreach(string s in supNames) { 
+            foreach (string s in supplierNames) { 
                 SuppliersListBox.Items.Add(s);
             }
-            foreach (string s in supTypes) {
+            foreach (string s in supplierTypes) {
                 SupplierTypesListBox.Items.Add(s);
             }
             foreach (var store in stores) {
                 StoresListBox.Items.Add(store.Value.location);
             }
+            foreach (var date in dates) {
+                DatesListBox.Items.Add("Week " + Convert.ToString(date.week) + ", " + Convert.ToString(date.year));
+            }
 
             sw.Stop();
             Console.WriteLine("ListBoxes populated in " + sw.ElapsedMilliseconds / 1000.0f + " seconds.");
+
+            ViewGraphButton.Enabled = true;
         }
 
+        private void StoresListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            selectionIndices[(int)INDICES.STORE] = StoresListBox.SelectedIndex;
+            UpdateViewGraphsButton();
+        }
+        private void SuppliersListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            selectionIndices[(int)INDICES.SUPPLIER] = SuppliersListBox.SelectedIndex;
+            UpdateViewGraphsButton();
+        }
+        private void SupplierTypesListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            selectionIndices[(int)INDICES.SUPPLIER_T] = SupplierTypesListBox.SelectedIndex;
+            UpdateViewGraphsButton();
+        }
+        private void DatesListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            selectionIndices[(int)INDICES.DATE] = DatesListBox.SelectedIndex;
+            UpdateViewGraphsButton();
+        }
+
+        private void StoresDeselectLabel_Click(object sender, EventArgs e) {
+            StoresListBox.SelectedIndex = -1;
+            UpdateViewGraphsButton();
+        }
+        private void SuppliersDeactivateLabel_Click(object sender, EventArgs e) {
+            SuppliersListBox.SelectedIndex = -1;
+            UpdateViewGraphsButton();
+        }
+        private void SupplierTypesDeactivateLabel_Click(object sender, EventArgs e) {
+            SupplierTypesListBox.SelectedIndex = -1;
+            UpdateViewGraphsButton();
+        }
+        private void DateDeactivateLabel_Click(object sender, EventArgs e) {
+            DatesListBox.SelectedIndex = -1;
+            UpdateViewGraphsButton();
+        }
+
+        void UpdateViewGraphsButton() {
+            string updateText = "View orders from";
+            updateText += (selectionIndices[(int)INDICES.STORE] == -1 ? " ALL stores," : " the " + stores.Values.ElementAt(selectionIndices[(int)INDICES.STORE]).location + " Store,");
+            updateText += (selectionIndices[(int)INDICES.SUPPLIER] == -1 ? " ALL suppliers," : " Supplier \"" + supplierNames.ElementAt(selectionIndices[(int)INDICES.SUPPLIER]) + "\",");
+            updateText += (selectionIndices[(int)INDICES.SUPPLIER_T] == -1 ? " ALL supplier types" : " Supplier Type \"" + supplierTypes.ElementAt(selectionIndices[(int)INDICES.SUPPLIER_T]) + "\"");
+            updateText += (selectionIndices[(int)INDICES.DATE] == -1 ? " and ALL dates" : " from Week " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).week + ", " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).year);
+
+            ViewGraphButton.Text = updateText;
+        }
+
+        private void ViewGraphButton_Click(object sender, EventArgs e) {
+            // Query all orders using PLINQ
+            var parallelQuery = from num in orders.AsParallel()
+                                select num;
+
+            // Filter query by user selection. -1 means no selection so it doesn't filter for that category.
+            if(selectionIndices[(int)INDICES.STORE] != -1)
+                parallelQuery = parallelQuery.Where(o => o.store.code == stores.Values.ElementAt(selectionIndices[(int)INDICES.STORE]).code);
+            if (selectionIndices[(int)INDICES.SUPPLIER] != -1)
+                parallelQuery = parallelQuery.Where(o => o.supplierName == supplierNames.ElementAt(selectionIndices[(int)INDICES.SUPPLIER]));
+            if (selectionIndices[(int)INDICES.SUPPLIER_T] != -1)
+                parallelQuery = parallelQuery.Where(o => o.supplierType == supplierTypes.ElementAt(selectionIndices[(int)INDICES.SUPPLIER_T]));
+            if (selectionIndices[(int)INDICES.DATE] != -1)
+                parallelQuery = parallelQuery.Where(o => (o.date.week + "" + o.date.year) == dates.ElementAt(selectionIndices[(int)INDICES.DATE]).week + "" + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).year);
+
+            var queryList = parallelQuery.ToList();
+
+            if (queryList.Count == 0) { 
+                MessageBox.Show("Unable to find any orders with specified parameters", "No orders found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+
+        }
     }
 }
 
@@ -189,9 +267,24 @@ class Store {
     public String location;
 }
 
-class Date {
+public class Date {
     public int week;
     public int year;
+}
+
+public class DateComparer : IEqualityComparer<Date> {
+    public bool Equals(Date x, Date y) {
+        string combined1 = Convert.ToString(x.week) + Convert.ToString(x.year);
+        string combined2 = Convert.ToString(y.week) + Convert.ToString(y.year);
+        
+        return combined1 == combined2;
+    }
+
+    public int GetHashCode(Date obj) {
+        string combined = Convert.ToString(obj.week) + Convert.ToString(obj.year);
+        
+        return combined.GetHashCode();
+    }
 }
 
 class Order {
