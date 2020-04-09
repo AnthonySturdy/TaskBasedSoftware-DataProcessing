@@ -73,6 +73,21 @@ namespace Parallelised_Order_Processing {
         }
 
         private void LoadDataButton_Click(object sender, EventArgs e) {
+            stores.Clear();         // Clear previously loaded data
+            dates.Clear();
+            supplierNames.Clear();
+            supplierTypes.Clear();
+            orders.Clear();
+
+            selectionIndices = Enumerable.Repeat<int>(-1, 4).ToArray(); // Reset previous selections
+
+            StoresListBox.Items.Clear();        // Clear list boxes
+            SuppliersListBox.Items.Clear();
+            SupplierTypesListBox.Items.Clear();
+            DatesListBox.Items.Clear();
+
+            
+
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
@@ -84,15 +99,13 @@ namespace Parallelised_Order_Processing {
 
             // Load order data
             string[] fileNames = Directory.GetFiles(DataDirectoryTextBox.Text);
-            FileLoadingProgressBar.Maximum = fileNames.Length;  //Set maximum of progress bar
-            FileLoadingProgressBar.Value = 0;
 
             // Ensure folder isn't empty
             if (fileNames.Length == 0)
                 MessageBox.Show("Can't find any order data in specified file path", "Invalid File Path", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-            // Loop through each file in data directory
-            foreach(string path in fileNames) {
+            // Loop through each file in data directory             foreach(string path in fileNames)
+            foreach (string path in fileNames) {
                 if (Path.GetExtension(path) != ".csv")
                     return;
 
@@ -111,26 +124,16 @@ namespace Parallelised_Order_Processing {
 
                 // Parallel process each line of order data
                 string[] orderData = File.ReadAllLines(path);
-                foreach(string orderLine in orderData) {
+                foreach (string orderLine in orderData) {
                     ProcessOrderFile(orderLine, store, date);
-                }
-
-                // Progress bar and percentage loaded
-                FileLoadingProgressBar.Value++;
-                FileLoadingProgressBar.Refresh();
-                if(FileLoadingProgressBar.Value == FileLoadingProgressBar.Maximum) {
-                    LoadDataButton.Text = "Load Data";
-                    LoadDataButton.Enabled = true;
-                    LoadDataButton.Refresh();
-                } else {
-                    LoadDataButton.Text = "Loading Data: " + (int)(((float)FileLoadingProgressBar.Value / (float)FileLoadingProgressBar.Maximum)*100) + "%";
-                    LoadDataButton.Enabled = false;
-                    LoadDataButton.Refresh();
                 }
             }
 
             sw.Stop();  //Stop load data timer and print milliseconds
             Console.WriteLine("Data Loaded in " + sw.ElapsedMilliseconds/1000.0f + " seconds.");
+
+            LoadDataButton.Enabled = true;
+            LoadDataButton.Text = "Load Data";
 
             PopulateListBoxes();
         }
@@ -172,16 +175,16 @@ namespace Parallelised_Order_Processing {
             sw.Start();
 
             // Populate all list boxes
-            foreach (string s in supplierNames) { 
+            foreach (string s in supplierNames.AsParallel()) { 
                 SuppliersListBox.Items.Add(s);
             }
-            foreach (string s in supplierTypes) {
+            foreach (string s in supplierTypes.AsParallel()) {
                 SupplierTypesListBox.Items.Add(s);
             }
-            foreach (var store in stores) {
+            foreach (var store in stores.AsParallel()) {
                 StoresListBox.Items.Add(store.Value.location);
             }
-            foreach (var date in dates) {
+            foreach (var date in dates.AsParallel()) {
                 DatesListBox.Items.Add("Week " + Convert.ToString(date.week) + ", " + Convert.ToString(date.year));
             }
 
@@ -243,7 +246,19 @@ namespace Parallelised_Order_Processing {
             ViewGraphButton.Text = updatedButtonText;
         }
 
+        void ClearCharts() {
+            DatesChart.Series[0].Points.Clear();
+            StoresChart.Series[0].Points.Clear();
+            SupplierChart.Series[0].Points.Clear();
+            SupplierTypesChart.Series[0].Points.Clear();
+        }
+
         private void ViewGraphButton_Click(object sender, EventArgs e) {
+            ClearCharts();
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
             // Query all orders using PLINQ
             var parallelQuery = from num in orders.AsParallel()
                                 select num;
@@ -265,11 +280,73 @@ namespace Parallelised_Order_Processing {
                 return;
             }
 
+            sw.Stop();
+            Console.WriteLine("Filtered orders using PLINQ in " + sw.ElapsedMilliseconds / 1000.0f + " seconds");
+
+            sw.Restart();
+
+            // Split cost into categories
             double totalCost = queryList.AsParallel().Sum(item => item.cost);
-            Dictionary<string, int> queriedStores = new Dictionary<string, int>();
-            foreach(var obj in queryList) {
-                // TODO: Loop through list of objects, try and add to above dictionary, if it already exists add the current cost onto the value already in the dictonary. This should give all queried stores and their portion of the cost
+            Dictionary<string, double> graphStoresData = new Dictionary<string, double>();
+            Dictionary<string, double> graphSuppliersData = new Dictionary<string, double>();
+            Dictionary<string, double> graphSupplierTypesData = new Dictionary<string, double>();
+            Dictionary<string, double> graphDatesData = new Dictionary<string, double>();
+            foreach (var obj in queryList) {
+                // Populate stores graph dictionary
+                if (graphStoresData.ContainsKey(obj.store.code)) 
+                    graphStoresData[obj.store.code] = graphStoresData[obj.store.code] + obj.cost;
+                 else 
+                    graphStoresData.Add(obj.store.code, obj.cost);
+
+                // Populate suppliers graph dictionary
+                if (graphSuppliersData.ContainsKey(obj.supplierName))
+                    graphSuppliersData[obj.supplierName] = graphSuppliersData[obj.supplierName] + obj.cost;
+                else
+                    graphSuppliersData.Add(obj.supplierName, obj.cost);
+
+                // Populate supplier type graph dictionary
+                if (graphSupplierTypesData.ContainsKey(obj.supplierType))
+                    graphSupplierTypesData[obj.supplierType] = graphSupplierTypesData[obj.supplierType] + obj.cost;
+                else
+                    graphSupplierTypesData.Add(obj.supplierType, obj.cost);
+
+                // Populate dates graph dictionary
+                if (graphDatesData.ContainsKey("W"+obj.date.week+" Y"+obj.date.year))
+                    graphDatesData["W" + obj.date.week + " Y" + obj.date.year] = graphDatesData["W" + obj.date.week + " Y" + obj.date.year] + obj.cost;
+                else
+                    graphDatesData.Add("W" + obj.date.week + " Y" + obj.date.year, obj.cost);
             }
+
+            // Build Stores graph
+            StoresChart.Titles[0].Text = "Stores - Total Cost: £" + String.Format("{0:n}", totalCost); 
+            StoresChart.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            foreach(var x in graphStoresData) {
+                StoresChart.Series[0].Points.AddXY(x.Key, x.Value);
+            }
+
+            // Build Suppliers graph
+            SupplierChart.Titles[0].Text = "Suppliers - Total Cost: £" + String.Format("{0:n}", totalCost);
+            SupplierChart.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            foreach (var x in graphSuppliersData) {
+                SupplierChart.Series[0].Points.AddXY(x.Key, x.Value);
+            }
+
+            // Build Supplier Types graph
+            SupplierTypesChart.Titles[0].Text = "Supplier Types - Total Cost: £" + String.Format("{0:n}", totalCost);
+            SupplierTypesChart.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            foreach (var x in graphSupplierTypesData) {
+                SupplierTypesChart.Series[0].Points.AddXY(x.Key, x.Value);
+            }
+
+            // Build Dates graph
+            DatesChart.Titles[0].Text = "Dates - Total Cost: £" + String.Format("{0:n}", totalCost);
+            DatesChart.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            foreach (var x in graphDatesData) {
+                DatesChart.Series[0].Points.AddXY(x.Key, x.Value);
+            }
+
+            sw.Stop();
+            Console.WriteLine("Graphs built in " + sw.ElapsedMilliseconds / 1000.0f + " seconds");
         }
     }
 }

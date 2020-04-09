@@ -46,7 +46,6 @@
             this.SelectStoreInfoLabel = new System.Windows.Forms.Label();
             this.SelectStoreInfoButton = new System.Windows.Forms.Button();
             this.LoadDataButton = new System.Windows.Forms.Button();
-            this.FileLoadingProgressBar = new System.Windows.Forms.ProgressBar();
             this.StoresListBox = new System.Windows.Forms.ListBox();
             this.StoresLabel = new System.Windows.Forms.Label();
             this.SuppliersLabel = new System.Windows.Forms.Label();
@@ -97,18 +96,18 @@
             this.DataDirectoryTextBox.Multiline = false;
             this.DataDirectoryTextBox.Name = "DataDirectoryTextBox";
             this.DataDirectoryTextBox.ReadOnly = true;
-            this.DataDirectoryTextBox.Size = new System.Drawing.Size(298, 32);
+            this.DataDirectoryTextBox.Size = new System.Drawing.Size(216, 32);
             this.DataDirectoryTextBox.TabIndex = 2;
             this.DataDirectoryTextBox.Text = "";
             this.DataDirectoryTextBox.TextChanged += new System.EventHandler(this.DataDirectoryTextBox_TextChanged);
             // 
             // SelectStoreInfoTextBox
             // 
-            this.SelectStoreInfoTextBox.Location = new System.Drawing.Point(396, 26);
+            this.SelectStoreInfoTextBox.Location = new System.Drawing.Point(334, 26);
             this.SelectStoreInfoTextBox.Multiline = false;
             this.SelectStoreInfoTextBox.Name = "SelectStoreInfoTextBox";
             this.SelectStoreInfoTextBox.ReadOnly = true;
-            this.SelectStoreInfoTextBox.Size = new System.Drawing.Size(298, 32);
+            this.SelectStoreInfoTextBox.Size = new System.Drawing.Size(216, 32);
             this.SelectStoreInfoTextBox.TabIndex = 5;
             this.SelectStoreInfoTextBox.Text = "";
             this.SelectStoreInfoTextBox.TextChanged += new System.EventHandler(this.SelectStoreInfoTextBox_TextChanged);
@@ -116,7 +115,7 @@
             // SelectStoreInfoLabel
             // 
             this.SelectStoreInfoLabel.AutoSize = true;
-            this.SelectStoreInfoLabel.Location = new System.Drawing.Point(358, 9);
+            this.SelectStoreInfoLabel.Location = new System.Drawing.Point(296, 9);
             this.SelectStoreInfoLabel.Name = "SelectStoreInfoLabel";
             this.SelectStoreInfoLabel.Size = new System.Drawing.Size(139, 13);
             this.SelectStoreInfoLabel.TabIndex = 4;
@@ -126,7 +125,7 @@
             // 
             this.SelectStoreInfoButton.BackgroundImage = global::Parallelised_Order_Processing.Properties.Resources.folder_1;
             this.SelectStoreInfoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SelectStoreInfoButton.Location = new System.Drawing.Point(361, 26);
+            this.SelectStoreInfoButton.Location = new System.Drawing.Point(299, 26);
             this.SelectStoreInfoButton.Margin = new System.Windows.Forms.Padding(0);
             this.SelectStoreInfoButton.Name = "SelectStoreInfoButton";
             this.SelectStoreInfoButton.Size = new System.Drawing.Size(32, 32);
@@ -139,18 +138,11 @@
             this.LoadDataButton.Enabled = false;
             this.LoadDataButton.Location = new System.Drawing.Point(12, 64);
             this.LoadDataButton.Name = "LoadDataButton";
-            this.LoadDataButton.Size = new System.Drawing.Size(682, 38);
+            this.LoadDataButton.Size = new System.Drawing.Size(538, 62);
             this.LoadDataButton.TabIndex = 6;
             this.LoadDataButton.Text = "Load Data";
             this.LoadDataButton.UseVisualStyleBackColor = true;
             this.LoadDataButton.Click += new System.EventHandler(this.LoadDataButton_Click);
-            // 
-            // FileLoadingProgressBar
-            // 
-            this.FileLoadingProgressBar.Location = new System.Drawing.Point(12, 108);
-            this.FileLoadingProgressBar.Name = "FileLoadingProgressBar";
-            this.FileLoadingProgressBar.Size = new System.Drawing.Size(682, 14);
-            this.FileLoadingProgressBar.TabIndex = 7;
             // 
             // StoresListBox
             // 
@@ -158,7 +150,7 @@
             this.StoresListBox.FormattingEnabled = true;
             this.StoresListBox.Location = new System.Drawing.Point(12, 145);
             this.StoresListBox.Name = "StoresListBox";
-            this.StoresListBox.Size = new System.Drawing.Size(166, 186);
+            this.StoresListBox.Size = new System.Drawing.Size(130, 576);
             this.StoresListBox.TabIndex = 8;
             this.StoresListBox.SelectedIndexChanged += new System.EventHandler(this.StoresListBox_SelectedIndexChanged);
             // 
@@ -174,7 +166,7 @@
             // SuppliersLabel
             // 
             this.SuppliersLabel.AutoSize = true;
-            this.SuppliersLabel.Location = new System.Drawing.Point(181, 129);
+            this.SuppliersLabel.Location = new System.Drawing.Point(145, 129);
             this.SuppliersLabel.Name = "SuppliersLabel";
             this.SuppliersLabel.Size = new System.Drawing.Size(50, 13);
             this.SuppliersLabel.TabIndex = 11;
@@ -184,16 +176,16 @@
             // 
             this.SuppliersListBox.Enabled = false;
             this.SuppliersListBox.FormattingEnabled = true;
-            this.SuppliersListBox.Location = new System.Drawing.Point(184, 145);
+            this.SuppliersListBox.Location = new System.Drawing.Point(148, 145);
             this.SuppliersListBox.Name = "SuppliersListBox";
-            this.SuppliersListBox.Size = new System.Drawing.Size(166, 186);
+            this.SuppliersListBox.Size = new System.Drawing.Size(130, 576);
             this.SuppliersListBox.TabIndex = 10;
             this.SuppliersListBox.SelectedIndexChanged += new System.EventHandler(this.SuppliersListBox_SelectedIndexChanged);
             // 
             // SupplierTypesLabel
             // 
             this.SupplierTypesLabel.AutoSize = true;
-            this.SupplierTypesLabel.Location = new System.Drawing.Point(353, 129);
+            this.SupplierTypesLabel.Location = new System.Drawing.Point(281, 129);
             this.SupplierTypesLabel.Name = "SupplierTypesLabel";
             this.SupplierTypesLabel.Size = new System.Drawing.Size(77, 13);
             this.SupplierTypesLabel.TabIndex = 13;
@@ -203,16 +195,16 @@
             // 
             this.SupplierTypesListBox.Enabled = false;
             this.SupplierTypesListBox.FormattingEnabled = true;
-            this.SupplierTypesListBox.Location = new System.Drawing.Point(356, 145);
+            this.SupplierTypesListBox.Location = new System.Drawing.Point(284, 145);
             this.SupplierTypesListBox.Name = "SupplierTypesListBox";
-            this.SupplierTypesListBox.Size = new System.Drawing.Size(166, 186);
+            this.SupplierTypesListBox.Size = new System.Drawing.Size(130, 576);
             this.SupplierTypesListBox.TabIndex = 12;
             this.SupplierTypesListBox.SelectedIndexChanged += new System.EventHandler(this.SupplierTypesListBox_SelectedIndexChanged);
             // 
             // DatesLabel
             // 
             this.DatesLabel.AutoSize = true;
-            this.DatesLabel.Location = new System.Drawing.Point(525, 129);
+            this.DatesLabel.Location = new System.Drawing.Point(417, 129);
             this.DatesLabel.Name = "DatesLabel";
             this.DatesLabel.Size = new System.Drawing.Size(35, 13);
             this.DatesLabel.TabIndex = 15;
@@ -222,18 +214,18 @@
             // 
             this.DatesListBox.Enabled = false;
             this.DatesListBox.FormattingEnabled = true;
-            this.DatesListBox.Location = new System.Drawing.Point(528, 145);
+            this.DatesListBox.Location = new System.Drawing.Point(420, 145);
             this.DatesListBox.Name = "DatesListBox";
-            this.DatesListBox.Size = new System.Drawing.Size(166, 186);
+            this.DatesListBox.Size = new System.Drawing.Size(130, 576);
             this.DatesListBox.TabIndex = 14;
             this.DatesListBox.SelectedIndexChanged += new System.EventHandler(this.DatesListBox_SelectedIndexChanged);
             // 
             // ViewGraphButton
             // 
             this.ViewGraphButton.Enabled = false;
-            this.ViewGraphButton.Location = new System.Drawing.Point(12, 337);
+            this.ViewGraphButton.Location = new System.Drawing.Point(12, 727);
             this.ViewGraphButton.Name = "ViewGraphButton";
-            this.ViewGraphButton.Size = new System.Drawing.Size(682, 38);
+            this.ViewGraphButton.Size = new System.Drawing.Size(538, 44);
             this.ViewGraphButton.TabIndex = 16;
             this.ViewGraphButton.Text = "View orders from ALL stores, ALL suppliers, ALL supplier types and ALL dates";
             this.ViewGraphButton.UseVisualStyleBackColor = true;
@@ -243,7 +235,7 @@
             // 
             this.StoresDeselectLabel.AutoSize = true;
             this.StoresDeselectLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.StoresDeselectLabel.Location = new System.Drawing.Point(129, 129);
+            this.StoresDeselectLabel.Location = new System.Drawing.Point(93, 129);
             this.StoresDeselectLabel.Name = "StoresDeselectLabel";
             this.StoresDeselectLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StoresDeselectLabel.Size = new System.Drawing.Size(49, 13);
@@ -255,7 +247,7 @@
             // 
             this.SuppliersDeactivateLabel.AutoSize = true;
             this.SuppliersDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SuppliersDeactivateLabel.Location = new System.Drawing.Point(301, 129);
+            this.SuppliersDeactivateLabel.Location = new System.Drawing.Point(229, 129);
             this.SuppliersDeactivateLabel.Name = "SuppliersDeactivateLabel";
             this.SuppliersDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SuppliersDeactivateLabel.Size = new System.Drawing.Size(49, 13);
@@ -267,7 +259,7 @@
             // 
             this.SupplierTypesDeactivateLabel.AutoSize = true;
             this.SupplierTypesDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SupplierTypesDeactivateLabel.Location = new System.Drawing.Point(473, 129);
+            this.SupplierTypesDeactivateLabel.Location = new System.Drawing.Point(365, 129);
             this.SupplierTypesDeactivateLabel.Name = "SupplierTypesDeactivateLabel";
             this.SupplierTypesDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SupplierTypesDeactivateLabel.Size = new System.Drawing.Size(49, 13);
@@ -279,7 +271,7 @@
             // 
             this.DateDeactivateLabel.AutoSize = true;
             this.DateDeactivateLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.DateDeactivateLabel.Location = new System.Drawing.Point(645, 129);
+            this.DateDeactivateLabel.Location = new System.Drawing.Point(501, 129);
             this.DateDeactivateLabel.Name = "DateDeactivateLabel";
             this.DateDeactivateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DateDeactivateLabel.Size = new System.Drawing.Size(49, 13);
@@ -291,16 +283,16 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.StoresChart.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
             legend1.Name = "Legend1";
             this.StoresChart.Legends.Add(legend1);
-            this.StoresChart.Location = new System.Drawing.Point(12, 382);
+            this.StoresChart.Location = new System.Drawing.Point(556, 9);
             this.StoresChart.Name = "StoresChart";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.StoresChart.Series.Add(series1);
-            this.StoresChart.Size = new System.Drawing.Size(166, 122);
+            this.StoresChart.Size = new System.Drawing.Size(776, 250);
             this.StoresChart.TabIndex = 21;
             this.StoresChart.Text = "StoresChart";
             title1.Name = "StoresTitle";
@@ -311,16 +303,16 @@
             // 
             chartArea2.Name = "ChartArea1";
             this.SupplierChart.ChartAreas.Add(chartArea2);
+            legend2.Enabled = false;
             legend2.Name = "Legend1";
             this.SupplierChart.Legends.Add(legend2);
-            this.SupplierChart.Location = new System.Drawing.Point(184, 382);
+            this.SupplierChart.Location = new System.Drawing.Point(556, 521);
             this.SupplierChart.Name = "SupplierChart";
             series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.SupplierChart.Series.Add(series2);
-            this.SupplierChart.Size = new System.Drawing.Size(166, 122);
+            this.SupplierChart.Size = new System.Drawing.Size(528, 250);
             this.SupplierChart.TabIndex = 22;
             this.SupplierChart.Text = "StoresChart";
             title2.Name = "SuppliersTitle";
@@ -333,14 +325,14 @@
             this.SupplierTypesChart.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.SupplierTypesChart.Legends.Add(legend3);
-            this.SupplierTypesChart.Location = new System.Drawing.Point(356, 382);
+            this.SupplierTypesChart.Location = new System.Drawing.Point(1090, 521);
             this.SupplierTypesChart.Name = "SupplierTypesChart";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.SupplierTypesChart.Series.Add(series3);
-            this.SupplierTypesChart.Size = new System.Drawing.Size(166, 122);
+            this.SupplierTypesChart.Size = new System.Drawing.Size(242, 250);
             this.SupplierTypesChart.TabIndex = 23;
             this.SupplierTypesChart.Text = "StoresChart";
             title3.Name = "SupplierTypesTitle";
@@ -351,16 +343,16 @@
             // 
             chartArea4.Name = "ChartArea1";
             this.DatesChart.ChartAreas.Add(chartArea4);
+            legend4.Enabled = false;
             legend4.Name = "Legend1";
             this.DatesChart.Legends.Add(legend4);
-            this.DatesChart.Location = new System.Drawing.Point(528, 382);
+            this.DatesChart.Location = new System.Drawing.Point(556, 265);
             this.DatesChart.Name = "DatesChart";
             series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.DatesChart.Series.Add(series4);
-            this.DatesChart.Size = new System.Drawing.Size(166, 122);
+            this.DatesChart.Size = new System.Drawing.Size(776, 250);
             this.DatesChart.TabIndex = 24;
             this.DatesChart.Text = "StoresChart";
             title4.Name = "DatesTitle";
@@ -371,7 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 691);
+            this.ClientSize = new System.Drawing.Size(1344, 787);
             this.Controls.Add(this.DatesChart);
             this.Controls.Add(this.SupplierTypesChart);
             this.Controls.Add(this.SupplierChart);
@@ -389,7 +381,6 @@
             this.Controls.Add(this.SuppliersListBox);
             this.Controls.Add(this.StoresLabel);
             this.Controls.Add(this.StoresListBox);
-            this.Controls.Add(this.FileLoadingProgressBar);
             this.Controls.Add(this.LoadDataButton);
             this.Controls.Add(this.SelectStoreInfoTextBox);
             this.Controls.Add(this.SelectStoreInfoLabel);
@@ -418,7 +409,6 @@
         private System.Windows.Forms.Label SelectStoreInfoLabel;
         private System.Windows.Forms.Button SelectStoreInfoButton;
         private System.Windows.Forms.Button LoadDataButton;
-        private System.Windows.Forms.ProgressBar FileLoadingProgressBar;
         private System.Windows.Forms.ListBox StoresListBox;
         private System.Windows.Forms.Label StoresLabel;
         private System.Windows.Forms.Label SuppliersLabel;
