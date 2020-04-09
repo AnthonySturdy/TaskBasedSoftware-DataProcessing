@@ -226,13 +226,21 @@ namespace Parallelised_Order_Processing {
         }
 
         void UpdateViewGraphsButton() {
-            string updateText = "View orders from";
-            updateText += (selectionIndices[(int)INDICES.STORE] == -1 ? " ALL stores," : " the " + stores.Values.ElementAt(selectionIndices[(int)INDICES.STORE]).location + " Store,");
-            updateText += (selectionIndices[(int)INDICES.SUPPLIER] == -1 ? " ALL suppliers," : " Supplier \"" + supplierNames.ElementAt(selectionIndices[(int)INDICES.SUPPLIER]) + "\",");
-            updateText += (selectionIndices[(int)INDICES.SUPPLIER_T] == -1 ? " ALL supplier types" : " Supplier Type \"" + supplierTypes.ElementAt(selectionIndices[(int)INDICES.SUPPLIER_T]) + "\"");
-            updateText += (selectionIndices[(int)INDICES.DATE] == -1 ? " and ALL dates" : " from Week " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).week + ", " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).year);
+            string updatedButtonText = "View orders from";
+            updatedButtonText += (selectionIndices[(int)INDICES.STORE] == -1 ? 
+                                            " ALL stores," : 
+                                            " the " + stores.Values.ElementAt(selectionIndices[(int)INDICES.STORE]).location + " Store,");
+            updatedButtonText += (selectionIndices[(int)INDICES.SUPPLIER] == -1 ? 
+                                            " ALL suppliers," : 
+                                            " Supplier \"" + supplierNames.ElementAt(selectionIndices[(int)INDICES.SUPPLIER]) + "\",");
+            updatedButtonText += (selectionIndices[(int)INDICES.SUPPLIER_T] == -1 ? 
+                                            " ALL supplier types" : 
+                                            " Supplier Type \"" + supplierTypes.ElementAt(selectionIndices[(int)INDICES.SUPPLIER_T]) + "\"");
+            updatedButtonText += (selectionIndices[(int)INDICES.DATE] == -1 ? 
+                                            " and ALL dates" : 
+                                            " from Week " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).week + ", " + dates.ElementAt(selectionIndices[(int)INDICES.DATE]).year);
 
-            ViewGraphButton.Text = updateText;
+            ViewGraphButton.Text = updatedButtonText;
         }
 
         private void ViewGraphButton_Click(object sender, EventArgs e) {
@@ -257,7 +265,11 @@ namespace Parallelised_Order_Processing {
                 return;
             }
 
-
+            double totalCost = queryList.AsParallel().Sum(item => item.cost);
+            Dictionary<string, int> queriedStores = new Dictionary<string, int>();
+            foreach(var obj in queryList) {
+                // TODO: Loop through list of objects, try and add to above dictionary, if it already exists add the current cost onto the value already in the dictonary. This should give all queried stores and their portion of the cost
+            }
         }
     }
 }
