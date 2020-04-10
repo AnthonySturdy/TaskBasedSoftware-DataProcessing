@@ -86,8 +86,6 @@ namespace Parallelised_Order_Processing {
             SupplierTypesListBox.Items.Clear();
             DatesListBox.Items.Clear();
 
-            
-
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
