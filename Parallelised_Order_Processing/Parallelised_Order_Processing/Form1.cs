@@ -298,7 +298,7 @@ namespace Parallelised_Order_Processing {
                 lvi.SubItems.Add(obj.supplierName);
                 lvi.SubItems.Add(obj.supplierType);
                 lvi.SubItems.Add("Week " + obj.date.week + ", " + obj.date.year);
-                lvi.SubItems.Add("£" + obj.cost);
+                lvi.SubItems.Add("£" + String.Format("{0:n}", obj.cost));
                 lvis.Add(lvi);
 
                 TotalCostLabel.Text = "Total Cost: £" + String.Format("{0:n}", totalCost);
