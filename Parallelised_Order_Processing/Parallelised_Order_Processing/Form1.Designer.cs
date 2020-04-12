@@ -23,22 +23,22 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.LoadDataDirectoryButton = new System.Windows.Forms.Button();
             this.SelectFolderLabel = new System.Windows.Forms.Label();
             this.DataDirectoryTextBox = new System.Windows.Forms.RichTextBox();
@@ -63,6 +63,13 @@
             this.SupplierChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.SupplierTypesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.DatesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.FilteredOrdersListView = new System.Windows.Forms.ListView();
+            this.Store = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Supplier = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SupplierType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Cost = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TotalCostLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StoresChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SupplierChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SupplierTypesChart)).BeginInit();
@@ -150,7 +157,7 @@
             this.StoresListBox.FormattingEnabled = true;
             this.StoresListBox.Location = new System.Drawing.Point(12, 145);
             this.StoresListBox.Name = "StoresListBox";
-            this.StoresListBox.Size = new System.Drawing.Size(130, 576);
+            this.StoresListBox.Size = new System.Drawing.Size(130, 342);
             this.StoresListBox.TabIndex = 8;
             this.StoresListBox.SelectedIndexChanged += new System.EventHandler(this.StoresListBox_SelectedIndexChanged);
             // 
@@ -178,7 +185,7 @@
             this.SuppliersListBox.FormattingEnabled = true;
             this.SuppliersListBox.Location = new System.Drawing.Point(148, 145);
             this.SuppliersListBox.Name = "SuppliersListBox";
-            this.SuppliersListBox.Size = new System.Drawing.Size(130, 576);
+            this.SuppliersListBox.Size = new System.Drawing.Size(130, 342);
             this.SuppliersListBox.TabIndex = 10;
             this.SuppliersListBox.SelectedIndexChanged += new System.EventHandler(this.SuppliersListBox_SelectedIndexChanged);
             // 
@@ -197,7 +204,7 @@
             this.SupplierTypesListBox.FormattingEnabled = true;
             this.SupplierTypesListBox.Location = new System.Drawing.Point(284, 145);
             this.SupplierTypesListBox.Name = "SupplierTypesListBox";
-            this.SupplierTypesListBox.Size = new System.Drawing.Size(130, 576);
+            this.SupplierTypesListBox.Size = new System.Drawing.Size(130, 342);
             this.SupplierTypesListBox.TabIndex = 12;
             this.SupplierTypesListBox.SelectedIndexChanged += new System.EventHandler(this.SupplierTypesListBox_SelectedIndexChanged);
             // 
@@ -216,14 +223,14 @@
             this.DatesListBox.FormattingEnabled = true;
             this.DatesListBox.Location = new System.Drawing.Point(420, 145);
             this.DatesListBox.Name = "DatesListBox";
-            this.DatesListBox.Size = new System.Drawing.Size(130, 576);
+            this.DatesListBox.Size = new System.Drawing.Size(130, 342);
             this.DatesListBox.TabIndex = 14;
             this.DatesListBox.SelectedIndexChanged += new System.EventHandler(this.DatesListBox_SelectedIndexChanged);
             // 
             // ViewGraphButton
             // 
             this.ViewGraphButton.Enabled = false;
-            this.ViewGraphButton.Location = new System.Drawing.Point(12, 727);
+            this.ViewGraphButton.Location = new System.Drawing.Point(12, 493);
             this.ViewGraphButton.Name = "ViewGraphButton";
             this.ViewGraphButton.Size = new System.Drawing.Size(538, 44);
             this.ViewGraphButton.TabIndex = 16;
@@ -281,89 +288,143 @@
             // 
             // StoresChart
             // 
-            chartArea1.Name = "ChartArea1";
-            this.StoresChart.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.StoresChart.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.StoresChart.ChartAreas.Add(chartArea5);
+            legend5.Enabled = false;
+            legend5.Name = "Legend1";
+            this.StoresChart.Legends.Add(legend5);
             this.StoresChart.Location = new System.Drawing.Point(556, 9);
             this.StoresChart.Name = "StoresChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.StoresChart.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.StoresChart.Series.Add(series5);
             this.StoresChart.Size = new System.Drawing.Size(776, 250);
             this.StoresChart.TabIndex = 21;
             this.StoresChart.Text = "StoresChart";
-            title1.Name = "StoresTitle";
-            title1.Text = "Stores";
-            this.StoresChart.Titles.Add(title1);
+            title5.Name = "StoresTitle";
+            title5.Text = "Stores";
+            this.StoresChart.Titles.Add(title5);
             // 
             // SupplierChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.SupplierChart.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.SupplierChart.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.SupplierChart.ChartAreas.Add(chartArea6);
+            legend6.Enabled = false;
+            legend6.Name = "Legend1";
+            this.SupplierChart.Legends.Add(legend6);
             this.SupplierChart.Location = new System.Drawing.Point(556, 521);
             this.SupplierChart.Name = "SupplierChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.SupplierChart.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.SupplierChart.Series.Add(series6);
             this.SupplierChart.Size = new System.Drawing.Size(528, 250);
             this.SupplierChart.TabIndex = 22;
             this.SupplierChart.Text = "StoresChart";
-            title2.Name = "SuppliersTitle";
-            title2.Text = "Suppliers";
-            this.SupplierChart.Titles.Add(title2);
+            title6.Name = "SuppliersTitle";
+            title6.Text = "Suppliers";
+            this.SupplierChart.Titles.Add(title6);
             // 
             // SupplierTypesChart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.SupplierTypesChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.SupplierTypesChart.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.SupplierTypesChart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.SupplierTypesChart.Legends.Add(legend7);
             this.SupplierTypesChart.Location = new System.Drawing.Point(1090, 521);
             this.SupplierTypesChart.Name = "SupplierTypesChart";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.SupplierTypesChart.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.SupplierTypesChart.Series.Add(series7);
             this.SupplierTypesChart.Size = new System.Drawing.Size(242, 250);
             this.SupplierTypesChart.TabIndex = 23;
             this.SupplierTypesChart.Text = "StoresChart";
-            title3.Name = "SupplierTypesTitle";
-            title3.Text = "Supplier Types";
-            this.SupplierTypesChart.Titles.Add(title3);
+            title7.Name = "SupplierTypesTitle";
+            title7.Text = "Supplier Types";
+            this.SupplierTypesChart.Titles.Add(title7);
             // 
             // DatesChart
             // 
-            chartArea4.Name = "ChartArea1";
-            this.DatesChart.ChartAreas.Add(chartArea4);
-            legend4.Enabled = false;
-            legend4.Name = "Legend1";
-            this.DatesChart.Legends.Add(legend4);
+            chartArea8.Name = "ChartArea1";
+            this.DatesChart.ChartAreas.Add(chartArea8);
+            legend8.Enabled = false;
+            legend8.Name = "Legend1";
+            this.DatesChart.Legends.Add(legend8);
             this.DatesChart.Location = new System.Drawing.Point(556, 265);
             this.DatesChart.Name = "DatesChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.DatesChart.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.DatesChart.Series.Add(series8);
             this.DatesChart.Size = new System.Drawing.Size(776, 250);
             this.DatesChart.TabIndex = 24;
             this.DatesChart.Text = "StoresChart";
-            title4.Name = "DatesTitle";
-            title4.Text = "Dates";
-            this.DatesChart.Titles.Add(title4);
+            title8.Name = "DatesTitle";
+            title8.Text = "Dates";
+            this.DatesChart.Titles.Add(title8);
+            // 
+            // FilteredOrdersListView
+            // 
+            this.FilteredOrdersListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Store,
+            this.Supplier,
+            this.SupplierType,
+            this.Date,
+            this.Cost});
+            this.FilteredOrdersListView.FullRowSelect = true;
+            this.FilteredOrdersListView.GridLines = true;
+            this.FilteredOrdersListView.HideSelection = false;
+            this.FilteredOrdersListView.Location = new System.Drawing.Point(12, 560);
+            this.FilteredOrdersListView.Name = "FilteredOrdersListView";
+            this.FilteredOrdersListView.Size = new System.Drawing.Size(538, 211);
+            this.FilteredOrdersListView.TabIndex = 25;
+            this.FilteredOrdersListView.UseCompatibleStateImageBehavior = false;
+            this.FilteredOrdersListView.View = System.Windows.Forms.View.Details;
+            // 
+            // Store
+            // 
+            this.Store.Text = "Store";
+            this.Store.Width = 109;
+            // 
+            // Supplier
+            // 
+            this.Supplier.Text = "Supplier";
+            this.Supplier.Width = 114;
+            // 
+            // SupplierType
+            // 
+            this.SupplierType.Text = "Supplier Type";
+            this.SupplierType.Width = 144;
+            // 
+            // Date
+            // 
+            this.Date.Text = "Date";
+            this.Date.Width = 94;
+            // 
+            // Cost
+            // 
+            this.Cost.Text = "Cost";
+            this.Cost.Width = 73;
+            // 
+            // TotalCostLabel
+            // 
+            this.TotalCostLabel.AutoSize = true;
+            this.TotalCostLabel.Location = new System.Drawing.Point(9, 544);
+            this.TotalCostLabel.Name = "TotalCostLabel";
+            this.TotalCostLabel.Size = new System.Drawing.Size(73, 13);
+            this.TotalCostLabel.TabIndex = 26;
+            this.TotalCostLabel.Text = "Total Cost: £0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 787);
+            this.Controls.Add(this.TotalCostLabel);
+            this.Controls.Add(this.FilteredOrdersListView);
             this.Controls.Add(this.DatesChart);
             this.Controls.Add(this.SupplierTypesChart);
             this.Controls.Add(this.SupplierChart);
@@ -426,6 +487,13 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart SupplierChart;
         private System.Windows.Forms.DataVisualization.Charting.Chart SupplierTypesChart;
         private System.Windows.Forms.DataVisualization.Charting.Chart DatesChart;
+        private System.Windows.Forms.ListView FilteredOrdersListView;
+        private System.Windows.Forms.ColumnHeader Store;
+        private System.Windows.Forms.ColumnHeader Supplier;
+        private System.Windows.Forms.ColumnHeader SupplierType;
+        private System.Windows.Forms.ColumnHeader Date;
+        private System.Windows.Forms.ColumnHeader Cost;
+        private System.Windows.Forms.Label TotalCostLabel;
     }
 }
 

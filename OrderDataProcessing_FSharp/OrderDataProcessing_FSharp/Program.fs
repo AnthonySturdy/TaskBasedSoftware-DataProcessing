@@ -1,8 +1,9 @@
-﻿open System
+﻿// Anthony Sturdy - Parallel Data Processing F# Implementation
+open System
 open System.IO
+open System.Linq
 open System.Diagnostics
 open System.Threading.Tasks
-open System.Collections.Generic
 open System.Collections.Concurrent
 
 let mutable fileDir = ""
@@ -12,11 +13,11 @@ let mutable supplierFilter = ""
 let mutable supplierTypeFilter = ""
 
 type Order(_storeCode : string, _date : string, _suppName : string, _suppType : string, _cost : double) =
-    let storeCode = _storeCode
-    let date = _date
-    let suppName = _suppName
-    let suppType = _suppType
-    let cost = _cost
+    member x.storeCode = _storeCode
+    member x.date = _date
+    member x.suppName = _suppName
+    member x.suppType = _suppType
+    member x.cost = _cost
 
 let orders = new ConcurrentBag<Order>()
 
@@ -69,9 +70,34 @@ let PrintOptions() =
     Console.WriteLine("6. Print Data")
 
 let PrintData() = 
-    Console.WriteLine("Printing data aaaa beep boop")
+    Console.WriteLine("Querying data..")
 
-    // USE LINQ/PLINQ TO FILTER DATA AND DISPLAY
+    let qObject = orders.ToArray().AsParallel<Order>()
+    let query = 
+        qObject
+        |> Seq.filter(fun o -> if storeFilter = "" then true else o.storeCode = storeFilter)        //F# doesn't have ternary (?) operator, so this goes:
+        |> Seq.filter(fun o -> if dateFilter = "" then true else o.date = dateFilter)               //If filter is empty, return true, else, return whether filter matches order details
+        |> Seq.filter(fun o -> if supplierFilter = "" then true else o.suppName = supplierFilter)
+        |> Seq.filter(fun o -> if supplierTypeFilter = "" then true else o.suppType = supplierTypeFilter)
+
+    let totalCost =
+        query 
+        |> Seq.sumBy( fun o -> o.cost )
+
+    if query.Count() = 0 then
+        Console.WriteLine("No matches found with specified filters!")
+    else if query.Count() > 150000 then
+        Console.WriteLine("A lot of results (" + Convert.ToString(query.Count()) + ") are about to be printed, continue? (y/n)")
+        let choice = Console.ReadLine()
+        if choice <> "n" then
+            for o in query do
+                Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t" + Convert.ToString(o.cost))
+            Console.WriteLine("Total Cost: £" + Convert.ToString(totalCost))
+    else
+        for o in query do
+            Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t" + Convert.ToString(o.cost))
+        Console.WriteLine("Total Cost: £" + Convert.ToString(totalCost))
+    
 
 let CheckInput(input : string) =
     if input = "1" then

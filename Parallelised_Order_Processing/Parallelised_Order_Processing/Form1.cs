@@ -253,6 +253,8 @@ namespace Parallelised_Order_Processing {
 
         private void ViewGraphButton_Click(object sender, EventArgs e) {
             ClearCharts();
+            FilteredOrdersListView.Items.Clear();
+            TotalCostLabel.Text = "Total Cost: £0";
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
@@ -289,7 +291,18 @@ namespace Parallelised_Order_Processing {
             Dictionary<string, double> graphSuppliersData = new Dictionary<string, double>();
             Dictionary<string, double> graphSupplierTypesData = new Dictionary<string, double>();
             Dictionary<string, double> graphDatesData = new Dictionary<string, double>();
+            List<ListViewItem> lvis = new List<ListViewItem>();
             foreach (var obj in queryList) {
+                // Populate ListView
+                ListViewItem lvi = new ListViewItem(obj.store.location);
+                lvi.SubItems.Add(obj.supplierName);
+                lvi.SubItems.Add(obj.supplierType);
+                lvi.SubItems.Add("Week " + obj.date.week + ", " + obj.date.year);
+                lvi.SubItems.Add("£" + obj.cost);
+                lvis.Add(lvi);
+
+                TotalCostLabel.Text = "Total Cost: £" + String.Format("{0:n}", totalCost);
+
                 // Populate stores graph dictionary
                 if (graphStoresData.ContainsKey(obj.store.code)) 
                     graphStoresData[obj.store.code] = graphStoresData[obj.store.code] + obj.cost;
@@ -345,6 +358,9 @@ namespace Parallelised_Order_Processing {
 
             sw.Stop();
             Console.WriteLine("Graphs built in " + sw.ElapsedMilliseconds / 1000.0f + " seconds");
+
+            // Add filtered orders to list view
+            FilteredOrdersListView.Items.AddRange(lvis.ToArray());
         }
     }
 }
