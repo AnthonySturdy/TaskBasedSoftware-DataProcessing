@@ -61,7 +61,7 @@ let Initialise() =
 
 let PrintOptions() = 
     // Print user options
-    Console.WriteLine("\nTo filter the order date, please choose from the following options:")
+    Console.WriteLine("\nTo filter the order data, please choose from the following options:")
     Console.WriteLine("1. Store")
     Console.WriteLine("2. Date")
     Console.WriteLine("3. Supplier")
@@ -72,13 +72,19 @@ let PrintOptions() =
 let PrintData() = 
     Console.WriteLine("Querying data..")
 
-    let qObject = orders.ToArray().AsParallel<Order>()
+    let sw : Stopwatch = new Stopwatch();
+    sw.Start()
+
+    let qObject = orders.ToArray()
     let query = 
         qObject
         |> Seq.filter(fun o -> if storeFilter = "" then true else o.storeCode = storeFilter)        //F# doesn't have ternary (?) operator, so this goes:
         |> Seq.filter(fun o -> if dateFilter = "" then true else o.date = dateFilter)               //If filter is empty, return true, else, return whether filter matches order details
         |> Seq.filter(fun o -> if supplierFilter = "" then true else o.suppName = supplierFilter)
         |> Seq.filter(fun o -> if supplierTypeFilter = "" then true else o.suppType = supplierTypeFilter)
+
+    sw.Stop()
+    Console.WriteLine("Results queried using PLINQ took " + Convert.ToString(Convert.ToDouble(sw.ElapsedMilliseconds)/1000.0) + " seconds")
 
     let totalCost =
         query 
@@ -91,13 +97,13 @@ let PrintData() =
         let choice = Console.ReadLine()
         if choice <> "n" then
             for o in query do
-                Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t" + Convert.ToString(o.cost))
+                Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t£" + Convert.ToString(o.cost))
             Console.WriteLine("Total Cost: £" + Convert.ToString(totalCost))
     else
         for o in query do
-            Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t" + Convert.ToString(o.cost))
+            Console.WriteLine(o.storeCode + "\t" + o.date + "\t\t" + o.suppName + "\t" + o.suppType + "\t£" + Convert.ToString(o.cost))
         Console.WriteLine("Total Cost: £" + Convert.ToString(totalCost))
-    
+
 
 let CheckInput(input : string) =
     if input = "1" then

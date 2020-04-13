@@ -294,14 +294,15 @@ namespace Parallelised_Order_Processing {
             List<ListViewItem> lvis = new List<ListViewItem>();
             foreach (var obj in queryList) {
                 // Populate ListView
-                ListViewItem lvi = new ListViewItem(obj.store.location);
-                lvi.SubItems.Add(obj.supplierName);
-                lvi.SubItems.Add(obj.supplierType);
-                lvi.SubItems.Add("Week " + obj.date.week + ", " + obj.date.year);
-                lvi.SubItems.Add("£" + String.Format("{0:n}", obj.cost));
-                lvis.Add(lvi);
-
-                TotalCostLabel.Text = "Total Cost: £" + String.Format("{0:n}", totalCost);
+                if(queryList.Count < 500000) { 
+                    ListViewItem lvi = new ListViewItem(obj.store.location);
+                    lvi.SubItems.Add(obj.supplierName);
+                    lvi.SubItems.Add(obj.supplierType);
+                    lvi.SubItems.Add("Week " + obj.date.week + ", " + obj.date.year);
+                    lvi.SubItems.Add("£" + String.Format("{0:n}", obj.cost));
+                    lvis.Add(lvi);
+                }
+                TotalCostLabel.Text = "Total Cost: £" + String.Format("{0:n}", totalCost) + (queryList.Count > 500000 ? " - Displaying queried orders in ListView will crash software. Please apply more filters." : "");
 
                 // Populate stores graph dictionary
                 if (graphStoresData.ContainsKey(obj.store.code)) 
